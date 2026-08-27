@@ -17,20 +17,20 @@
       --gold-dark: #9e7f59;
       --gold-gradient: linear-gradient(135deg, #c5a880 0%, #ecd9c4 40%, #c5a880 70%, #9e7f59 100%);
       
-      --noir-deep: #0b0a09;
-      --noir-card: #141311;
-      --noir-surface: #1a1917;
-      --noir-border: rgba(197, 168, 128, 0.22);
+      --noir-deep: #0a0908;
+      --noir-card: #131210;
+      --noir-surface: #181715;
+      --noir-border: rgba(197, 168, 128, 0.24);
       
       --alabaster: #f9f7f4;
       --cream-card: #ffffff;
-      --cream-surface: #f3efe8;
+      --cream-surface: #f4f0e9;
       --cream-border: #e3ded5;
       
       --text-gold: #c5a880;
-      --text-noir: #161412;
-      --text-muted: #736d64;
-      --text-light: #ebe6dc;
+      --text-noir: #151412;
+      --text-muted: #6f685e;
+      --text-light: #ece7de;
       
       --font-serif: 'Playfair Display', Georgia, serif;
       --font-cormorant: 'Cormorant Garamond', Garamond, serif;
@@ -38,7 +38,7 @@
       
       --shadow-luxury: 0 16px 40px rgba(0, 0, 0, 0.28);
       --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.05);
-      --radius: 12px;
+      --radius: 8px;
     }
 
     * {
@@ -58,53 +58,54 @@
 
     /* HEADER & BRANDING */
     header {
-      background: linear-gradient(180deg, #090807 0%, #131210 100%);
+      background: linear-gradient(180deg, #070605 0%, #11100e 100%);
       color: #fff;
-      padding: 60px 20px 50px;
+      padding: 65px 20px 55px;
       text-align: center;
       position: relative;
       border-bottom: 1px solid var(--noir-border);
     }
 
     .brand-logo-container {
-      max-width: 380px;
-      margin: 0 auto 24px;
+      max-width: 320px;
+      margin: 0 auto 28px;
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
-    .brand-logo-container svg {
-      width: 100%;
-      height: auto;
-      max-height: 80px;
-      filter: drop-shadow(0 4px 12px rgba(197, 168, 128, 0.2));
+    .brand-logo {
+      height: 52px;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
     }
 
     .gold-divider {
-      width: 80px;
+      width: 70px;
       height: 1.5px;
       background: var(--gold-gradient);
-      margin: 20px auto;
+      margin: 22px auto;
     }
 
     .header-tagline {
       font-family: var(--font-cormorant);
-      font-size: 21px;
-      letter-spacing: 3px;
+      font-size: 20px;
+      letter-spacing: 4px;
       text-transform: uppercase;
       color: var(--text-gold);
-      margin-bottom: 12px;
+      margin-bottom: 14px;
       font-weight: 500;
     }
 
     header h1 {
       font-family: var(--font-serif);
-      font-size: 40px;
+      font-size: 38px;
       font-weight: 400;
       letter-spacing: -0.5px;
       color: #f7f4ee;
-      margin-bottom: 16px;
+      margin-bottom: 18px;
       line-height: 1.25;
     }
 
@@ -117,29 +118,30 @@
     }
 
     header p.lead {
-      font-size: 16px;
-      color: #b3aca0;
+      font-size: 15.5px;
+      color: #b5ada1;
       max-width: 820px;
       margin: 0 auto 28px;
       font-weight: 300;
+      line-height: 1.7;
     }
 
     .meta-pills {
       display: flex;
       justify-content: center;
-      gap: 16px;
+      gap: 14px;
       flex-wrap: wrap;
-      margin-bottom: 30px;
+      margin-bottom: 32px;
     }
 
     .meta-pill {
-      font-size: 12.5px;
-      letter-spacing: 1px;
+      font-size: 12px;
+      letter-spacing: 1.5px;
       text-transform: uppercase;
-      background: rgba(197, 168, 128, 0.08);
+      background: rgba(197, 168, 128, 0.07);
       color: #dfceb8;
-      padding: 6px 18px;
-      border-radius: 30px;
+      padding: 7px 20px;
+      border-radius: 4px;
       border: 1px solid var(--noir-border);
     }
 
@@ -155,45 +157,43 @@
       color: var(--noir-deep);
       border: none;
       padding: 13px 30px;
-      border-radius: 6px;
-      font-size: 14px;
+      border-radius: 4px;
+      font-size: 13px;
       font-weight: 600;
-      letter-spacing: 1px;
+      letter-spacing: 1.2px;
       text-transform: uppercase;
       cursor: pointer;
       text-decoration: none;
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      box-shadow: 0 4px 18px rgba(197, 168, 128, 0.3);
+      box-shadow: 0 4px 18px rgba(197, 168, 128, 0.25);
       transition: all 0.25s ease;
     }
 
     .btn-gold:hover {
       transform: translateY(-2px);
-      box-shadow: 0 8px 26px rgba(197, 168, 128, 0.45);
+      box-shadow: 0 8px 26px rgba(197, 168, 128, 0.4);
     }
 
     .btn-outline-gold {
       background: transparent;
       color: #dfceb8;
-      border: 1px solid rgba(197, 168, 128, 0.4);
+      border: 1px solid rgba(197, 168, 128, 0.35);
       padding: 13px 26px;
-      border-radius: 6px;
-      font-size: 14px;
+      border-radius: 4px;
+      font-size: 13px;
       font-weight: 500;
-      letter-spacing: 1px;
+      letter-spacing: 1.2px;
       text-transform: uppercase;
       cursor: pointer;
       text-decoration: none;
       display: inline-flex;
       align-items: center;
-      gap: 8px;
       transition: all 0.2s ease;
     }
 
     .btn-outline-gold:hover {
-      background: rgba(197, 168, 128, 0.12);
+      background: rgba(197, 168, 128, 0.1);
       border-color: var(--gold-primary);
       color: #fff;
     }
@@ -202,7 +202,7 @@
     .nav-bar {
       position: sticky;
       top: 0;
-      background: rgba(15, 14, 12, 0.96);
+      background: rgba(12, 11, 10, 0.97);
       backdrop-filter: blur(14px);
       z-index: 100;
       border-bottom: 1px solid var(--noir-border);
@@ -213,26 +213,27 @@
 
     .nav-links {
       display: inline-flex;
-      gap: 8px;
+      gap: 6px;
     }
 
     .nav-link {
-      color: #a69f94;
+      color: #9e978c;
       text-decoration: none;
-      font-size: 13px;
-      letter-spacing: 0.5px;
-      padding: 7px 18px;
-      border-radius: 20px;
+      font-size: 12.5px;
+      letter-spacing: 0.8px;
+      padding: 7px 16px;
+      border-radius: 4px;
       border: 1px solid transparent;
       transition: all 0.2s;
       font-weight: 500;
       white-space: nowrap;
+      text-transform: uppercase;
     }
 
     .nav-link:hover, .nav-link.active {
       color: #fff;
-      background: rgba(197, 168, 128, 0.15);
-      border-color: rgba(197, 168, 128, 0.35);
+      background: rgba(197, 168, 128, 0.12);
+      border-color: rgba(197, 168, 128, 0.3);
     }
 
     .container {
@@ -243,11 +244,11 @@
 
     /* FINANCIAL HIGHLIGHT BANNER */
     .pricing-hero-card {
-      background: linear-gradient(145deg, #161513 0%, #1e1d1a 100%);
+      background: linear-gradient(145deg, #131210 0%, #1a1916 100%);
       color: #fff;
       border-radius: var(--radius);
       border: 1px solid var(--noir-border);
-      padding: 36px 40px;
+      padding: 38px 42px;
       margin-bottom: 50px;
       box-shadow: var(--shadow-luxury);
       position: relative;
@@ -259,9 +260,9 @@
       position: absolute;
       top: 0;
       right: 0;
-      width: 250px;
+      width: 240px;
       height: 100%;
-      background: radial-gradient(circle at center, rgba(197, 168, 128, 0.12) 0%, transparent 70%);
+      background: radial-gradient(circle at center, rgba(197, 168, 128, 0.1) 0%, transparent 70%);
       pointer-events: none;
     }
 
@@ -274,26 +275,27 @@
 
     .pricing-info h3 {
       font-family: var(--font-serif);
-      font-size: 26px;
+      font-size: 25px;
       font-weight: 500;
       color: #f7f4ee;
       margin-bottom: 8px;
     }
 
     .pricing-info p {
-      color: #a8a298;
-      font-size: 15px;
+      color: #a39c90;
+      font-size: 14.5px;
       max-width: 650px;
+      line-height: 1.65;
     }
 
     .pricing-numbers {
       text-align: right;
-      border-left: 1px solid rgba(197, 168, 128, 0.25);
+      border-left: 1px solid rgba(197, 168, 128, 0.22);
       padding-left: 35px;
     }
 
     .pricing-total-label {
-      font-size: 12px;
+      font-size: 11.5px;
       letter-spacing: 2px;
       text-transform: uppercase;
       color: var(--text-gold);
@@ -313,21 +315,21 @@
     }
 
     .pricing-sub {
-      font-size: 13.5px;
-      color: #8c867c;
+      font-size: 13px;
+      color: #8c8579;
       margin-top: 6px;
     }
 
-    /* SECTION TITLE */
+    /* SECTION TITLES */
     .section-title-wrap {
       text-align: center;
       margin: 60px auto 40px;
-      max-width: 800px;
+      max-width: 820px;
     }
 
     .section-roman {
       font-family: var(--font-cormorant);
-      font-size: 20px;
+      font-size: 19px;
       letter-spacing: 4px;
       text-transform: uppercase;
       color: var(--gold-dark);
@@ -337,144 +339,20 @@
 
     .section-title-wrap h2 {
       font-family: var(--font-serif);
-      font-size: 34px;
+      font-size: 32px;
       font-weight: 500;
       color: var(--noir-deep);
       margin-bottom: 12px;
+      letter-spacing: -0.3px;
     }
 
     .section-title-wrap p {
-      font-size: 16px;
+      font-size: 15.5px;
       color: var(--text-muted);
+      line-height: 1.7;
     }
 
-    /* UN FURNISHED SECTION */
-    .unfurnished-gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-      gap: 28px;
-      margin-bottom: 50px;
-    }
-
-    .unfurnished-card {
-      background: var(--cream-card);
-      border-radius: var(--radius);
-      overflow: hidden;
-      border: 1px solid var(--cream-border);
-      box-shadow: var(--shadow-soft);
-      transition: all 0.3s ease;
-    }
-
-    .unfurnished-card:hover {
-      box-shadow: var(--shadow-luxury);
-      border-color: rgba(197, 168, 128, 0.5);
-    }
-
-    .unfurnished-card-img-wrap {
-      position: relative;
-      height: 280px;
-      overflow: hidden;
-      background: #111;
-    }
-
-    .unfurnished-card-img-wrap img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.6s ease;
-    }
-
-    .unfurnished-card:hover .unfurnished-card-img-wrap img {
-      transform: scale(1.04);
-    }
-
-    .unfurnished-badge {
-      position: absolute;
-      top: 16px;
-      left: 16px;
-      background: rgba(11, 10, 9, 0.85);
-      color: var(--text-gold);
-      font-size: 11.5px;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      padding: 5px 14px;
-      border-radius: 4px;
-      border: 1px solid var(--noir-border);
-      backdrop-filter: blur(8px);
-      font-weight: 600;
-    }
-
-    .unfurnished-content {
-      padding: 24px 28px;
-    }
-
-    .unfurnished-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 8px;
-    }
-
-    .unfurnished-header h4 {
-      font-family: var(--font-serif);
-      font-size: 20px;
-      color: var(--noir-deep);
-      font-weight: 600;
-    }
-
-    .unfurnished-dims {
-      font-family: var(--font-cormorant);
-      font-size: 16px;
-      color: var(--gold-dark);
-      font-weight: 600;
-    }
-
-    .unfurnished-status {
-      font-size: 13px;
-      color: var(--text-muted);
-      margin-bottom: 14px;
-    }
-
-    .unfurnished-specs-list {
-      list-style: none;
-      margin-bottom: 18px;
-    }
-
-    .unfurnished-specs-list li {
-      font-size: 13.5px;
-      color: #3b3732;
-      padding: 5px 0;
-      border-bottom: 1px solid #f2eee7;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .unfurnished-specs-list li::before {
-      content: "✦";
-      color: var(--gold-dark);
-      font-size: 11px;
-    }
-
-    .client-creative-box {
-      background: var(--cream-surface);
-      border-left: 3px solid var(--gold-primary);
-      padding: 14px 18px;
-      border-radius: 0 6px 6px 0;
-      font-size: 13px;
-      color: #4a443b;
-    }
-
-    .client-creative-box strong {
-      display: block;
-      font-size: 11.5px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--gold-dark);
-      margin-bottom: 4px;
-    }
-
-    /* BEFORE / AFTER VIEW CARDS */
+    /* VIEW CARDS */
     .view-card {
       background: var(--cream-card);
       border-radius: var(--radius);
@@ -485,7 +363,7 @@
     }
 
     .view-header {
-      padding: 24px 34px 18px;
+      padding: 22px 34px 18px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -495,19 +373,19 @@
 
     .view-header h3 {
       font-family: var(--font-serif);
-      font-size: 23px;
+      font-size: 22px;
       font-weight: 600;
       color: var(--noir-deep);
     }
 
     .view-tag {
-      font-size: 12px;
-      letter-spacing: 1px;
+      font-size: 11.5px;
+      letter-spacing: 1.2px;
       text-transform: uppercase;
       color: var(--gold-dark);
       background: #f4ecdf;
       padding: 5px 14px;
-      border-radius: 20px;
+      border-radius: 4px;
       font-weight: 600;
       border: 1px solid rgba(197, 168, 128, 0.3);
     }
@@ -516,10 +394,10 @@
     .compare-container {
       position: relative;
       width: 100%;
-      height: 640px;
+      height: 620px;
       overflow: hidden;
       user-select: none;
-      background: #0d0c0b;
+      background: #0a0908;
       cursor: ew-resize;
     }
 
@@ -561,8 +439,8 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      width: 48px;
-      height: 48px;
+      width: 44px;
+      height: 44px;
       background: #ffffff;
       border-radius: 50%;
       transform: translate(-50%, -50%);
@@ -570,7 +448,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      box-shadow: 0 4px 18px rgba(0,0,0,0.35);
       pointer-events: none;
     }
 
@@ -585,98 +463,254 @@
     .slider-handle::before {
       border-width: 5px 6px 5px 0;
       border-color: transparent #222 transparent transparent;
-      left: 12px;
+      left: 10px;
     }
 
     .slider-handle::after {
       border-width: 5px 0 5px 6px;
       border-color: transparent transparent transparent #222;
-      right: 12px;
+      right: 10px;
     }
 
     .label-badge {
       position: absolute;
-      bottom: 24px;
-      padding: 8px 18px;
-      background: rgba(11, 10, 9, 0.88);
+      bottom: 22px;
+      padding: 7px 16px;
+      background: rgba(10, 9, 8, 0.9);
       color: #fff;
-      font-size: 12px;
+      font-size: 11.5px;
       border-radius: 4px;
       backdrop-filter: blur(10px);
       z-index: 5;
-      letter-spacing: 1.2px;
+      letter-spacing: 1.5px;
       font-weight: 600;
       border: 1px solid rgba(255, 255, 255, 0.15);
+      text-transform: uppercase;
     }
 
     .label-badge.label-before {
-      right: 24px;
+      right: 22px;
     }
 
     .label-badge.label-after {
-      left: 24px;
+      left: 22px;
       background: var(--gold-gradient);
       color: var(--noir-deep);
       border-color: rgba(255, 255, 255, 0.4);
     }
 
     .view-content {
-      padding: 32px 36px;
+      padding: 30px 36px;
     }
 
     .view-desc {
-      font-size: 15.5px;
-      color: #38342f;
-      margin-bottom: 26px;
+      font-size: 15px;
+      color: #35312c;
+      margin-bottom: 24px;
       line-height: 1.7;
     }
 
     .specs-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 18px;
+      gap: 16px;
     }
 
     .spec-item {
       background: var(--alabaster);
-      padding: 18px 20px;
-      border-radius: 8px;
+      padding: 16px 20px;
+      border-radius: 4px;
       border: 1px solid var(--cream-border);
     }
 
     .spec-item strong {
-      display: flex;
-      align-items: center;
-      gap: 6px;
+      display: block;
       color: var(--gold-dark);
-      font-size: 11.5px;
+      font-size: 11px;
       text-transform: uppercase;
-      letter-spacing: 0.8px;
-      margin-bottom: 6px;
+      letter-spacing: 1px;
+      margin-bottom: 5px;
     }
 
     .spec-item span {
-      font-size: 14px;
+      font-size: 13.5px;
       color: var(--text-noir);
       font-weight: 500;
     }
 
     .spec-source {
       display: inline-block;
-      font-size: 11px;
-      background: #e8e1d5;
-      color: #595144;
+      font-size: 10.5px;
+      background: #e6dfd2;
+      color: #524a3e;
       padding: 3px 8px;
-      border-radius: 4px;
+      border-radius: 3px;
       margin-top: 5px;
       font-weight: 500;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    /* SUBSECTION: INTERIÉROVÉ MIESTNOSTI BEZ NÁBYTKU */
+    .unfurnished-subsection-card {
+      background: #faf8f5;
+      border: 1px solid var(--cream-border);
+      border-radius: var(--radius);
+      padding: 40px;
+      margin: 40px 0 60px;
+      box-shadow: var(--shadow-luxury);
+    }
+
+    .unfurnished-sub-header {
+      text-align: center;
+      margin-bottom: 35px;
+      border-bottom: 1px solid var(--cream-border);
+      padding-bottom: 25px;
+    }
+
+    .unfurnished-sub-header h3 {
+      font-family: var(--font-serif);
+      font-size: 26px;
+      color: var(--noir-deep);
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .unfurnished-sub-header p {
+      font-size: 14.5px;
+      color: var(--text-muted);
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    .unfurnished-rooms-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+
+    .room-card {
+      background: #ffffff;
+      border: 1px solid var(--cream-border);
+      border-radius: 6px;
+      overflow: hidden;
+      transition: all 0.25s ease;
+    }
+
+    .room-card:hover {
+      border-color: rgba(197, 168, 128, 0.45);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .room-card-img-wrap {
+      position: relative;
+      height: 230px;
+      background: #111;
+      overflow: hidden;
+    }
+
+    .room-card-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .room-card:hover .room-card-img-wrap img {
+      transform: scale(1.03);
+    }
+
+    .room-card-badge {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: rgba(10, 9, 8, 0.88);
+      color: var(--text-gold);
+      font-size: 11px;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 3px;
+      border: 1px solid var(--noir-border);
+      font-weight: 600;
+    }
+
+    .room-card-content {
+      padding: 22px 24px;
+    }
+
+    .room-card-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 6px;
+    }
+
+    .room-card-title-row h4 {
+      font-family: var(--font-serif);
+      font-size: 19px;
+      color: var(--noir-deep);
+      font-weight: 600;
+    }
+
+    .room-card-dims {
+      font-family: var(--font-cormorant);
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--gold-dark);
+    }
+
+    .room-card-status {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .room-card-specs {
+      list-style: none;
+      margin-bottom: 16px;
+    }
+
+    .room-card-specs li {
+      font-size: 13px;
+      color: #38342e;
+      padding: 5px 0;
+      border-bottom: 1px solid #f2ede4;
+      line-height: 1.5;
+    }
+
+    .room-card-specs li::before {
+      content: "— ";
+      color: var(--gold-dark);
+      font-weight: bold;
+    }
+
+    .room-card-concept {
+      background: #f7f3eb;
+      border-left: 2px solid var(--gold-primary);
+      padding: 12px 14px;
+      border-radius: 0 4px 4px 0;
+      font-size: 12.5px;
+      color: #4c463d;
+      line-height: 1.5;
+    }
+
+    .room-card-concept strong {
+      display: block;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--gold-dark);
+      margin-bottom: 3px;
     }
 
     /* FINANCIAL BREAKDOWN TABLE */
     .table-card {
       background: var(--cream-card);
       border-radius: var(--radius);
-      padding: 40px;
+      padding: 38px 42px;
       box-shadow: var(--shadow-luxury);
       border: 1px solid var(--cream-border);
       margin-top: 60px;
@@ -688,21 +722,21 @@
       align-items: flex-end;
       flex-wrap: wrap;
       gap: 20px;
-      margin-bottom: 28px;
+      margin-bottom: 26px;
       border-bottom: 1px solid var(--cream-border);
       padding-bottom: 20px;
     }
 
     .table-header-wrap h3 {
       font-family: var(--font-serif);
-      font-size: 26px;
+      font-size: 25px;
       color: var(--noir-deep);
       font-weight: 600;
     }
 
     .table-header-wrap p {
       color: var(--text-muted);
-      font-size: 14px;
+      font-size: 13.5px;
     }
 
     table {
@@ -712,36 +746,36 @@
     }
 
     th, td {
-      padding: 13px 16px;
+      padding: 12px 14px;
       border-bottom: 1px solid var(--cream-border);
     }
 
     th {
       background: #faf8f5;
       color: var(--noir-deep);
-      font-size: 11.5px;
+      font-size: 11px;
       text-transform: uppercase;
-      letter-spacing: 0.8px;
+      letter-spacing: 1px;
       font-weight: 600;
     }
 
     td {
-      font-size: 13.5px;
+      font-size: 13px;
     }
 
     tr:hover td {
-      background: #fdfbf7;
+      background: #fcfaf6;
     }
 
     .td-num {
       text-align: right;
       font-family: var(--font-sans);
-      font-size: 13.5px;
+      font-size: 13px;
       font-weight: 600;
     }
 
     .section-row {
-      background: #f5f0e6;
+      background: #f5efe3;
       font-weight: 600;
       color: var(--noir-deep);
       letter-spacing: 0.5px;
@@ -755,36 +789,45 @@
 
     .total-row td {
       border: none;
-      padding: 18px 16px;
+      padding: 18px 14px;
     }
 
     .total-row .td-num {
-      font-size: 18px;
+      font-size: 17px;
       color: var(--text-gold);
     }
 
     /* FOOTER */
     footer {
       background: var(--noir-deep);
-      color: #8c8579;
+      color: #857e72;
       text-align: center;
       padding: 60px 20px;
       margin-top: 80px;
       border-top: 1px solid var(--noir-border);
     }
 
-    footer .footer-logo {
-      max-width: 200px;
-      margin: 0 auto 20px;
+    .footer-logo-wrap {
+      margin: 0 auto 22px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .footer-logo {
+      height: 42px;
+      width: auto;
+      max-width: 100%;
+      opacity: 0.85;
+      object-fit: contain;
     }
 
     footer p {
-      font-size: 13.5px;
+      font-size: 13px;
       margin-bottom: 6px;
     }
 
     footer strong {
-      color: #fff;
+      color: #f0ece3;
     }
 
     @media print {
@@ -799,7 +842,7 @@
         height: 380px !important;
         page-break-inside: avoid;
       }
-      .view-card, .unfurnished-card, .table-card {
+      .view-card, .unfurnished-subsection-card, .table-card {
         box-shadow: none;
         border: 1px solid #ccc;
         page-break-inside: avoid;
@@ -809,22 +852,22 @@
 
     @media (max-width: 768px) {
       .compare-container {
-        height: 400px;
+        height: 380px;
       }
       header h1 {
-        font-size: 30px;
+        font-size: 28px;
       }
       .pricing-hero-grid {
         grid-template-columns: 1fr;
       }
       .pricing-numbers {
         border-left: none;
-        border-top: 1px solid rgba(197, 168, 128, 0.25);
+        border-top: 1px solid rgba(197, 168, 128, 0.22);
         padding-left: 0;
-        padding-top: 20px;
+        padding-top: 18px;
         text-align: left;
       }
-      .view-content, .table-card {
+      .view-content, .table-card, .unfurnished-subsection-card {
         padding: 20px;
       }
     }
@@ -832,312 +875,108 @@
 </head>
 <body>
 
-  <!-- HEADER WITH PRERAB EMBEDDED LOGO -->
+  <!-- HEADER WITH PRERAB ORIGINAL RASTER LOGO -->
   <header>
     <div class="brand-logo-container">
-      <!-- PRERAB Gold Architectural Vector Logo -->
-      <svg viewBox="0 0 760 170" width="100%" height="100%">
-        <defs>
-          <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#b88f58"/>
-            <stop offset="25%" stop-color="#e6cf9e"/>
-            <stop offset="50%" stop-color="#fdf3d1"/>
-            <stop offset="75%" stop-color="#d9b675"/>
-            <stop offset="100%" stop-color="#a67c44"/>
-          </linearGradient>
-        </defs>
-        <g fill="url(#goldGrad)" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-weight="700" font-size="106" letter-spacing="4px">
-          <text x="20" y="124">PRERAB</text>
-        </g>
-        <g transform="translate(505, 18)" stroke="url(#goldGrad)" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M 68 18 L 138 68 L 208 120" stroke-width="4.5"/>
-          <path d="M 68 18 L 10 68 L 10 120" stroke-width="4"/>
-          <path d="M 80 18 L 152 70 L 218 118" stroke-width="2.5" stroke-dasharray="3, 5"/>
-          <line x1="18" y1="68" x2="18" y2="120" stroke-width="4"/>
-          <line x1="138" y1="68" x2="138" y2="120" stroke-width="4"/>
-          <line x1="198" y1="112" x2="198" y2="120" stroke-width="4"/>
-          <line x1="10" y1="120" x2="200" y2="120" stroke-width="4"/>
-          <g stroke-width="1.8" opacity="0.95">
-            <line x1="18" y1="80" x2="138" y2="80"/>
-            <line x1="18" y1="90" x2="138" y2="90"/>
-            <line x1="18" y1="100" x2="138" y2="100"/>
-            <line x1="18" y1="110" x2="138" y2="110"/>
-            <line x1="30" y1="60" x2="30" y2="120"/>
-            <line x1="42" y1="50" x2="42" y2="120"/>
-            <line x1="54" y1="40" x2="54" y2="120"/>
-            <line x1="66" y1="28" x2="66" y2="120"/>
-            <line x1="78" y1="36" x2="78" y2="120"/>
-            <line x1="90" y1="46" x2="90" y2="120"/>
-            <line x1="102" y1="54" x2="102" y2="120"/>
-            <line x1="114" y1="62" x2="114" y2="120"/>
-            <line x1="126" y1="70" x2="126" y2="120"/>
-            <line x1="68" y1="18" x2="18" y2="120" stroke-width="2"/>
-            <line x1="68" y1="18" x2="68" y2="120" stroke-width="2.5"/>
-            <line x1="68" y1="18" x2="138" y2="120" stroke-width="2"/>
-            <rect x="154" y="85" width="22" height="35" stroke-width="2.5"/>
-            <line x1="182" y1="75" x2="182" y2="120" stroke-width="2" stroke-dasharray="2, 4"/>
-          </g>
-        </g>
-      </svg>
+      <img src="logo_prerab.png" alt="PRERAB" class="brand-logo">
     </div>
 
-    <div class="header-tagline">Autorský architektonický &amp; stavebný projekt</div>
-    <h1>Rekonštrukcia rodinného domu <strong>Objekt č. 40</strong></h1>
+    <div class="header-tagline">Autorský architektonický a stavebný projekt</div>
+    <h1>Rekonštrukcia rodinného domu &mdash; <strong>Objekt č. 40</strong></h1>
     <div class="gold-divider"></div>
-    <p class="lead">Komplexné riešenie obnovy s dôrazom na čisté stavebné štandardy, hladené sádrové omietky, precízne podlahy rybina a priestor pre vašu vlastnú fantáziu pri zariaďovaní.</p>
+    <p class="lead">Komplexná obnova rodinného domu s dôrazom na prémiové remeselné štandardy, hladené sádrové omietky, suché podlahové sústavy so vzorom rybina a priestor pripravený pre individuálne zariadenie interiéru.</p>
     
     <div class="meta-pills">
-      <div class="meta-pill">📍 Bratislava &middot; Objekt č. 40</div>
-      <div class="meta-pill">🏛️ Generálny zhotoviteľ: Modul Company s.r.o.</div>
-      <div class="meta-pill">✨ Štandard materiálov: SIKO &middot; Hornbach &middot; OBI</div>
+      <div class="meta-pill">Lokalita: Bratislava &middot; Objekt č. 40</div>
+      <div class="meta-pill">Generálny zhotoviteľ: Modul Company s.r.o.</div>
+      <div class="meta-pill">Značka realizácie: PRERAB</div>
     </div>
 
     <div class="action-bar">
-      <button class="btn-gold" onclick="window.print()">🖨️ Exportovať do PDF / Tlač</button>
-      <a class="btn-outline-gold" href="#bez-nabytku">🏛️ Priestory bez nábytku</a>
-      <a class="btn-outline-gold" href="#pred-po">🔄 Porovnanie Pred / Po</a>
-      <a class="btn-outline-gold" href="#rozpocet">💰 Investičný rozpočet</a>
+      <button class="btn-gold" onclick="window.print()">Exportovať do PDF / Tlač</button>
+      <a class="btn-outline-gold" href="#pred-po">Porovnanie Pred / Po</a>
+      <a class="btn-outline-gold" href="#interier-bez-nabytku">Miestnosti bez nábytku</a>
+      <a class="btn-outline-gold" href="#rozpocet">Investičný rozpočet</a>
     </div>
   </header>
 
-  <!-- STICKY NAVIGATION -->
+  <!-- STICKY NAVIGATION (NO EMOJIS, CLEAN ADULT DESIGN) -->
   <div class="nav-bar">
     <div class="nav-links">
-      <a href="#bez-nabytku" class="nav-link">I. Priestory bez nábytku</a>
-      <a href="#fasada" class="nav-link">1. Hlavná fasáda</a>
-      <a href="#vstup" class="nav-link">2. Vchod & závetrie</a>
+      <a href="#fasada" class="nav-link">1. Uličná fasáda</a>
+      <a href="#vstup" class="nav-link">2. Vchod a závetrie</a>
       <a href="#dvor" class="nav-link">3. Dvorová fasáda</a>
-      <a href="#obyvacka" class="nav-link">4. Obývačka s klenbou</a>
+      <a href="#obyvacka" class="nav-link">4. Obývacia izba</a>
       <a href="#hala" class="nav-link">5. Jaseňové schodisko</a>
-      <a href="#kuchyna" class="nav-link">6. Kuchyňa a jedáleň</a>
+      <a href="#kuchyna" class="nav-link">6. Kuchyňa</a>
       <a href="#spalna" class="nav-link">7. Hlavná spálňa</a>
-      <a href="#kupelna" class="nav-link">8. Kúpeľňa SIKO</a>
-      <a href="#rozpocet" class="nav-link" style="color: var(--text-gold); font-weight: 600;">IV. Rozpočet &amp; Ceny</a>
+      <a href="#kupelna" class="nav-link">8. Kúpeľňa na kľúč</a>
+      <a href="#interier-bez-nabytku" class="nav-link" style="color: var(--text-gold);">Miestnosti bez nábytku</a>
+      <a href="#rozpocet" class="nav-link" style="color: var(--text-gold);">Rozpočet stavby</a>
     </div>
   </div>
 
   <div class="container">
 
-    <!-- FINANCIAL HERO SUMMARY (RESTORED AS REQUESTED) -->
+    <!-- FINANCIAL SUMMARY CARD -->
     <div id="rozpocet-banner" class="pricing-hero-card">
       <div class="pricing-hero-grid">
         <div class="pricing-info">
           <h3>Investičný rozpočet rekonštrukcie na kľúč</h3>
-          <p>Kompletná kalkulácia prác a stavebných materiálov na základe oficiálnej cenovej ponuky CP26082026. Zahŕňa búracie práce, sádrové stierky, SDK podhľady, novú elektroinštaláciu, suchú podlahu s vinylom vzor rybina, schodisko z masívneho jaseňa a kúpeľňu SIKO na kľúč.</p>
+          <p>Oficiálna kalkulácia stavebných prác a dodávok materiálu podľa cenovej ponuky CP26082026. Rozpočet zahŕňa búracie práce, sádrové omietky Rimano Glet XL, sadrokartónové podhľady, novú elektroinštaláciu s revíziou, suchú podlahu Rigidur E25 s rigidným vinylom, schodisko z masívneho tvrdého jaseňa a kompletnú kúpeľňu s Jolly hranami na kľúč.</p>
         </div>
         <div class="pricing-numbers">
-          <div class="pricing-total-label">Celková investícia s DPH (23%)</div>
+          <div class="pricing-total-label">Celková investícia s DPH (23 %)</div>
           <div class="pricing-total-value">111 354,36 €</div>
-          <div class="pricing-sub">Základ bez DPH: <strong>90 532,00 €</strong> &middot; DPH 23%: <strong>20 822,36 €</strong></div>
+          <div class="pricing-sub">Základ bez DPH: <strong>90 532,00 €</strong> &middot; DPH 23 %: <strong>20 822,36 €</strong></div>
         </div>
       </div>
     </div>
 
-    <!-- SEKCIA I: PRIESTORY BEZ NÁBYTKU -->
-    <div id="bez-nabytku" class="section-title-wrap">
-      <div class="section-roman">Oddiel I</div>
-      <h2>Priestory bez nábytku &middot; Čistý architektonický základ</h2>
-      <p>Tento oddiel prezentuje dom v dokončenom stavebnom vyhotovení bez nábytku (vymaľované hladené sádrové steny, nová podlaha vzor rybina, zapustené osvetlenie a dokončená fasáda). Získavate tak dokonalý prehľad o skutočných rozmeroch a svetle, aby ste si mohli interiér dotvoriť podľa vlastnej fantázie.</p>
-    </div>
-
-    <div class="unfurnished-gallery-grid">
-      
-      <!-- 1. Hlavná fasáda exteriér -->
-      <div class="unfurnished-card">
-        <div class="unfurnished-card-img-wrap">
-          <img src="01_Fasad_Glavny.jpg" alt="Hlavná fasáda domu bez nábytku">
-          <span class="unfurnished-badge">Exteriér &middot; Uličná strana</span>
-        </div>
-        <div class="unfurnished-content">
-          <div class="unfurnished-header">
-            <h4>Hlavná uličná fasáda</h4>
-            <span class="unfurnished-dims">Baumit SilikonTop</span>
-          </div>
-          <div class="unfurnished-status">Čistý architektonický plášť domu</div>
-          <ul class="unfurnished-specs-list">
-            <li>Zateplenie fasády EPS-F a silikónová omietka odtieň greige</li>
-            <li>Nové lamelové horizontálne zábradlie balkóna antracit RAL 7016</li>
-            <li>Plastové okná s izolačným trojsklom a vonkajšími žalúziami</li>
-            <li>Okapový chodník zo štrku chrániaci sokel pred vodou</li>
-          </ul>
-          <div class="client-creative-box">
-            <strong>✨ Exteriérový koncept:</strong>
-            Čistá línia domu vytvára reprezentatívny prvý dojem. Predzáhradku môžete doplniť okrasnými trávami, levanduľou a moderným nasvietením chodníka.
-          </div>
-        </div>
-      </div>
-
-      <!-- 2. Bočný pohľad na dom -->
-      <div class="unfurnished-card">
-        <div class="unfurnished-card-img-wrap">
-          <img src="09_Fasad_Bocny_Pohlad.jpg" alt="Bočná perspektíva domu č. 40">
-          <span class="unfurnished-badge">Exteriér &middot; Bočná príjazdová cesta</span>
-        </div>
-        <div class="unfurnished-content">
-          <div class="unfurnished-header">
-            <h4>Bočná fasáda a vjazd</h4>
-            <span class="unfurnished-dims">Zámková dlažba</span>
-          </div>
-          <div class="unfurnished-status">Kompletne upravené okolie stavby</div>
-          <ul class="unfurnished-specs-list">
-            <li>Položená vibrolisovaná betónová dlažba na príjazdovej ceste</li>
-            <li>Nové okná a odvetranie suterénu s mriežkou</li>
-            <li>Zateplené steny s hydroizoláciou spodnej stavby</li>
-            <li>Fasádne nočné svietidlá s úspornými LED zdrojmi</li>
-          </ul>
-          <div class="client-creative-box">
-            <strong>✨ Exteriérový koncept:</strong>
-            Praktická spevnená plocha pre pohodlné parkovanie vozidiel a bezbariérový prístup do domu.
-          </div>
-        </div>
-      </div>
-
-      <!-- 3. Dvorová fasáda bez pergoly -->
-      <div class="unfurnished-card">
-        <div class="unfurnished-card-img-wrap">
-          <img src="03_Terrasa_Zadniy_Dvor.jpg" alt="Dvorová fasáda bez pergoly a nábytku">
-          <span class="unfurnished-badge">Exteriér &middot; Záhrada</span>
-        </div>
-        <div class="unfurnished-content">
-          <div class="unfurnished-header">
-            <h4>Dvorová fasáda &middot; Bez pergoly</h4>
-            <span class="unfurnished-dims">Čistý dom bez prístrešku</span>
-          </div>
-          <div class="unfurnished-status">Fasáda dokončená &middot; voľný dvor</div>
-          <ul class="unfurnished-specs-list">
-            <li>Zateplený plášť domu bez drahých terasových konštrukcií</li>
-            <li>Nové dažďové zvody a odkvapy chrániace terén</li>
-            <li>Drenážny štrkový pás 30 cm okolo celého obvodu stavby</li>
-            <li>Urovnaný terén s novým trávnikom</li>
-          </ul>
-          <div class="client-creative-box">
-            <strong>✨ Dvor pre vašu fantáziu:</strong>
-            Absencia pevného prístrešku vám dáva absolútnu voľnosť. Môžete sa sami rozhodnúť, kde v budúcnosti umiestnite gril, záhradný stôl so slnečníkom či detské ihrisko.
-          </div>
-        </div>
-      </div>
-
-      <!-- 4. Vstupná hala a schodisko masív jaseň -->
-      <div class="unfurnished-card">
-        <div class="unfurnished-card-img-wrap">
-          <img src="06_Prihozhaya_Lestnitsa.jpg" alt="Vstupná hala a schodisko z masívneho jaseňa">
-          <span class="unfurnished-badge">Interiér &middot; Prízemie</span>
-        </div>
-        <div class="unfurnished-content">
-          <div class="unfurnished-header">
-            <h4>Hala a jaseňové schodisko</h4>
-            <span class="unfurnished-dims">2,74 &times; 3,06 m</span>
-          </div>
-          <div class="unfurnished-status">Čistý stavebný stav &middot; Masívny jaseň (3 000 €)</div>
-          <ul class="unfurnished-specs-list">
-            <li>Nové masívne schodiskové stupne z tvrdého slovenského jaseňa</li>
-            <li>Murovaná priečka z tvárnic Ytong 150 mm s hladkou stierkou</li>
-            <li>Podlahová gresová zóna s prechodom na vinyl</li>
-            <li>Presklené dvere prinášajúce denné svetlo do chodby</li>
-          </ul>
-          <div class="client-creative-box">
-            <strong>💡 Možnosti zariadenia:</strong>
-            Pri rovnej stene z Ytongu je ideálne miesto pre vstavanú šatníkovú skriňu na mieru s posuvnými dverami a zrkadlom až po strop.
-          </div>
-        </div>
-      </div>
-
-      <!-- 5. Obývacia izba s klenbovým oblúkom -->
-      <div class="unfurnished-card">
-        <div class="unfurnished-card-img-wrap">
-          <img src="04_Gostinaya_S_Arkoy.jpg" alt="Obývacia izba s klenbovým oblúkom">
-          <span class="unfurnished-badge">Interiér &middot; Centrálny priestor</span>
-        </div>
-        <div class="unfurnished-content">
-          <div class="unfurnished-header">
-            <h4>Obývacia izba s klenbou</h4>
-            <span class="unfurnished-dims">4,26 &times; 3,41 m</span>
-          </div>
-          <div class="unfurnished-status">Položená podlaha rybina &middot; Sádrové steny</div>
-          <ul class="unfurnished-specs-list">
-            <li>Rigidný kompozitný vinyl ukladaný do vzoru rybina (dub prírodný)</li>
-            <li>Plynulo zahladený klenbový oblúk Rimano Glet XL bez líšt</li>
-            <li>Plochý radiátor Korado Radik Klasik pod oknom</li>
-            <li>Znížený biely sadrokartónový podhľad so zapustenými LED bodovkami</li>
-          </ul>
-          <div class="client-creative-box">
-            <strong>💡 Možnosti zariadenia:</strong>
-            Veľkorysý priestor pripravený pre rohovú sedačku svetlých tónov (krémová / piesková), konferenčný stolík a TV zostavu. Za oblúkom je ideálna čitáreň alebo jedáleň.
-          </div>
-        </div>
-      </div>
-
-      <!-- 6. Kúpeľňa na kľúč SIKO -->
-      <div class="unfurnished-card">
-        <div class="unfurnished-card-img-wrap">
-          <img src="08_Vannaya_Komnata.jpg" alt="Kúpeľňa na kľúč SIKO">
-          <span class="unfurnished-badge">Sanita &middot; Kúpeľňa na kľúč (7 500 €)</span>
-        </div>
-        <div class="unfurnished-content">
-          <div class="unfurnished-header">
-            <h4>Kúpeľňa na kľúč (SIKO)</h4>
-            <span class="unfurnished-dims">1,64 &times; 2,26 m</span>
-          </div>
-          <div class="unfurnished-status">Kompletne hotová sanita &middot; Jolly hrany 45°</div>
-          <ul class="unfurnished-specs-list">
-            <li>Veľkoformátový gres do výšky 2,1 m so zabrúsenými 45° Jolly hranami</li>
-            <li>Zabudovaný podomietkový modul Geberit Duofix</li>
-            <li>Akrylátová vaňa so sklenenou zástienkou na sprchovanie</li>
-            <li>Závesná umývadlová skrinka Naturel so zrkadlom</li>
-          </ul>
-          <div class="client-creative-box">
-            <strong>💡 Možnosti zariadenia:</strong>
-            Kúpeľňa je plne funkčná na užívanie od prvého dňa. Stačí doplniť mäkké uteráky v teplých béžových tónoch a dizajnové doplnky.
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- SEKCIA II: INTERAKTÍVNE POROVNANIE PRED / PO -->
+    <!-- SEKCIA: INTERAKTÍVNE POROVNANIE PRED / PO -->
     <div id="pred-po" class="section-title-wrap">
-      <div class="section-roman">Oddiel II</div>
-      <h2>Interaktívne porovnanie &laquo;Pred / Po&raquo; rekonštrukcii</h2>
-      <p>Potiahnutím stredovej línie môžete interaktívne porovnať pôvodný havarijný stav objektu s novým vyhotovením.</p>
+      <div class="section-roman">Oddiel I</div>
+      <h2>Interaktívne porovnanie &laquo;Pred / Po&raquo;</h2>
+      <p>Potiahnutím stredovej deliacej línie môžete interaktívne porovnať pôvodný havarijný stav jednotlivých častí domu s novým vyhotovením.</p>
     </div>
 
     <!-- 1. Fasáda -->
     <div id="fasada" class="view-card">
       <div class="view-header">
         <h3>1. Hlavná uličná fasáda a balkón</h3>
-        <span class="view-tag">Exteriér &middot; Baumit SilikonTop</span>
+        <span class="view-tag">Exteriér &middot; Zatepľovací systém</span>
       </div>
       <div class="compare-container" data-container>
-        <img class="compare-img before" src="pred_rekonstrukciou/01_pred_fasad_hlavny.jpg" alt="Pred rekonštrukciou">
+        <img class="compare-img before" src="pred_rekonstrukciou/01_pred_fasad_hlavny.jpg" alt="Pôvodný stav uličnej fasády">
         <div class="compare-img after-container" data-after>
-          <img class="after-inner" src="01_Fasad_Glavny.jpg" alt="Po rekonštrukcii" data-inner>
+          <img class="after-inner" src="01_Fasad_Glavny.jpg" alt="Stav po rekonštrukcii fasády" data-inner>
         </div>
         <div class="slider-handle" data-handle></div>
         <div class="label-badge label-after">PO REKONŠTRUKCII</div>
         <div class="label-badge label-before">PÔVODNÝ STAV</div>
       </div>
       <div class="view-content">
-        <p class="view-desc">Premena pôvodnej zvetranej brizolitovej omietky na zateplenú fasádu so silikónovou omietkou Baumit v elegantnom odtieni greige. Zhrdzavené zábradlie bolo nahradené bezúdržbovými hliníkovými lamelami v antracitovom odtieni RAL 7016 a okolo celého domu bol vytvorený štrkový okapový chodník.</p>
+        <p class="view-desc">Odstránenie zvetraného brizolitu a aplikácia kontaktného zatepľovacieho systému so silikónovou omietkou Baumit v odtieni greige. Zhrdzavené balkónové zábradlie bolo nahradené bezúdržbovým hliníkovým lamelovým systémom vo farbe antracit RAL 7016 a po obvode stavby bol zhotovený štrkový okapový chodník.</p>
         <div class="specs-grid">
           <div class="spec-item">
             <strong>Fasádny systém</strong>
-            <span>Baumit SilikonTop 1,5mm zateplenie</span>
-            <div class="spec-source">Hornbach / OBI</div>
+            <span>Kontaktné zateplenie EPS-F a silikónová omietka 1,5 mm</span>
+            <div class="spec-source">Tepelná ochrana stavby</div>
           </div>
           <div class="spec-item">
-            <strong>Zábradlie na balkóne</strong>
-            <span>Hliníkové horizontálne lamely RAL 7016</span>
-            <div class="spec-source">Bezpečné &amp; bezúdržbové</div>
+            <strong>Balkónové zábradlie</strong>
+            <span>Hliníkové horizontálne lamely s práškovým lakom RAL 7016</span>
+            <div class="spec-source">Bezúdržbové vyhotovenie</div>
           </div>
           <div class="spec-item">
             <strong>Sokel a okapový chodník</strong>
-            <span>Marmolit + praný riečny štrk 16/32 mm</span>
-            <div class="spec-source">Ochrana proti vlhkosti</div>
+            <span>Hydroizolačná marmolitová úprava a riečny štrk 16/32 mm</span>
+            <div class="spec-source">Ochrana spodnej stavby</div>
           </div>
           <div class="spec-item">
-            <strong>Okná a parapety</strong>
-            <span>Izolačné trojsklo antracit + hliníkové parapety</span>
-            <div class="spec-source">Tepelná úspora</div>
+            <strong>Výplne otvorov</strong>
+            <span>Plastové okná s izolačným trojsklom a exteriérovými žalúziami</span>
+            <div class="spec-source">Certifikovaná montáž</div>
           </div>
         </div>
       </div>
@@ -1147,39 +986,39 @@
     <div id="vstup" class="view-card">
       <div class="view-header">
         <h3>2. Vstupná zóna a vchodové dvere</h3>
-        <span class="view-tag">Exteriér &middot; Bezpečnostné dvere</span>
+        <span class="view-tag">Exteriér &middot; Vstupný portál</span>
       </div>
       <div class="compare-container" data-container>
-        <img class="compare-img before" src="pred_rekonstrukciou/02_pred_vstup_kryt.jpg" alt="Pred rekonštrukciou">
+        <img class="compare-img before" src="pred_rekonstrukciou/02_pred_vstup_kryt.jpg" alt="Pôvodný stav vstupu">
         <div class="compare-img after-container" data-after>
-          <img class="after-inner" src="02_Vhod_Kryltso.jpg" alt="Po rekonštrukcii" data-inner>
+          <img class="after-inner" src="02_Vhod_Kryltso.jpg" alt="Stav vstupu po rekonštrukcii" data-inner>
         </div>
         <div class="slider-handle" data-handle></div>
         <div class="label-badge label-after">PO REKONŠTRUKCII</div>
         <div class="label-badge label-before">PÔVODNÝ STAV</div>
       </div>
       <div class="view-content">
-        <p class="view-desc">Nové bezpečnostné zateplené dvere s nerezovým vertikálnym madlom, moderná sklenená strieška s hliníkovou konštrukciou a vstupné schodíky obložené protišmykovým mrazuvzdorným gresom.</p>
+        <p class="view-desc">Nové bezpečnostné zateplené dvere s nerezovým vertikálnym madlom, sklenená strieška s hliníkovou nosnou konštrukciou a vstupné schodisko obložené mrazuvzdorným gresom s protišmykovou úpravou R10.</p>
         <div class="specs-grid">
           <div class="spec-item">
-            <strong>Vstupné bezpečnostné dvere</strong>
-            <span>Zateplené oceľovo-hliníkové dvere s viacbodovým zámkom</span>
-            <div class="spec-source">Hornbach sortiment</div>
+            <strong>Vstupné dvere</strong>
+            <span>Bezpečnostné tepelno-izolačné dvere s viacbodovým uzamykaním</span>
+            <div class="spec-source">Bezpečnostná trieda RC2/RC3</div>
           </div>
           <div class="spec-item">
-            <strong>Vchodová strieška</strong>
-            <span>Bezpečnostné číre sklo s hliníkovým rámom</span>
-            <div class="spec-source">OBI / Hornbach</div>
+            <strong>Závesná strieška</strong>
+            <span>Vrstvené bezpečnostné sklo s antikoróznym hliníkovým kovaním</span>
+            <div class="spec-source">Ochrana vstupu pred zrážkami</div>
           </div>
           <div class="spec-item">
-            <strong>Vstupné schody</strong>
-            <span>Mrazuvzdorný gres so špeciálnou protišmykovou úpravou R10</span>
-            <div class="spec-source">SIKO Kúpeľne</div>
+            <strong>Vstupné stupne</strong>
+            <span>Protišmykový mrazuvzdorný gres s kalibrovanou hranou</span>
+            <div class="spec-source">Vysoká odolnosť R10</div>
           </div>
           <div class="spec-item">
-            <strong>Fasádne osvetlenie</strong>
-            <span>LED svietidlo so súmrakovým senzorom</span>
-            <div class="spec-source">Nová elektroinštalácia</div>
+            <strong>Exteriérové osvetlenie</strong>
+            <span>Nástenné fasádne LED teleso s optickým difúzorom</span>
+            <div class="spec-source">Automatické spínanie</div>
           </div>
         </div>
       </div>
@@ -1188,81 +1027,81 @@
     <!-- 3. Dvorová fasáda -->
     <div id="dvor" class="view-card">
       <div class="view-header">
-        <h3>3. Dvorová fasáda &middot; Bez pergoly a prístrešku</h3>
-        <span class="view-tag">Exteriér &middot; Realistický dvor</span>
+        <h3>3. Dvorová fasáda bez pergoly</h3>
+        <span class="view-tag">Exteriér &middot; Záhradná časť</span>
       </div>
       <div class="compare-container" data-container>
-        <img class="compare-img before" src="pred_rekonstrukciou/03_pred_terasa_dvor.jpg" alt="Pred rekonštrukciou">
+        <img class="compare-img before" src="pred_rekonstrukciou/03_pred_terasa_dvor.jpg" alt="Pôvodný stav dvorovej strany">
         <div class="compare-img after-container" data-after>
-          <img class="after-inner" src="03_Terrasa_Zadniy_Dvor.jpg" alt="Po rekonštrukcii" data-inner>
+          <img class="after-inner" src="03_Terrasa_Zadniy_Dvor.jpg" alt="Stav dvorovej fasády po rekonštrukcii" data-inner>
         </div>
         <div class="slider-handle" data-handle></div>
         <div class="label-badge label-after">PO REKONŠTRUKCII</div>
         <div class="label-badge label-before">PÔVODNÝ STAV</div>
       </div>
       <div class="view-content">
-        <p class="view-desc">Čisté fasádne vyhotovenie bez zbytočných a drahých terasových prístreškov. Nové zateplenie, dažďové zvody, štrkový pás a vyrovnaný terén záhrady pripravený pre voľné využitie.</p>
+        <p class="view-desc">Čisté fasádne vyhotovenie bez zbytočných nákladov na masívne prístrešky. Zjednotená tepelno-izolačná fasáda, nové dažďové zvody, štrkový drenážny pás chrániaci murivo a terén pripravený pre voľné využitie.</p>
         <div class="specs-grid">
           <div class="spec-item">
-            <strong>Zateplená omietka</strong>
-            <span>Baumit SilikonTop zjednotená s hlavnou fasádou</span>
-            <div class="spec-source">Kompletný tepelný plášť</div>
+            <strong>Omietkový plášť</strong>
+            <span>Silikónová fasádna hmota zjednotená s uličným priečelím</span>
+            <div class="spec-source">Vysoká paropriepustnosť</div>
           </div>
           <div class="spec-item">
-            <strong>Dažďové zvody</strong>
-            <span>Nové poplastované zvody a lapače nečistôt</span>
-            <div class="spec-source">Hornbach systémy</div>
+            <strong>Odvádzanie vôd</strong>
+            <span>Poplastované dažďové zvody a odkvapové žľaby</span>
+            <div class="spec-source">Bezúdržbový odvod vody</div>
           </div>
           <div class="spec-item">
-            <strong>Drenážny pás</strong>
-            <span>Štrkové lôžko 30 cm od steny s betónovým obrubníkom</span>
-            <div class="spec-source">Trvalá ochrana muriva</div>
+            <strong>Obvodový drenážny pás</strong>
+            <span>Praný riečny štrk s oddelením geotextíliou a obrubníkom</span>
+            <div class="spec-source">Trvalé odvetranie sokla</div>
           </div>
           <div class="spec-item">
-            <strong>Úprava pozemku</strong>
-            <span>Urovnanie terénu a výsev odolného trávnika</span>
+            <strong>Záhradná úprava</strong>
+            <span>Vyrovnanie terénu a výsev odolného trávneho osiva</span>
             <div class="spec-source">Jednoduchá údržba</div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- 4. Obývačka - PHOTO_20 JE EXAKTNÁ ZHODA S 04_Gostinaya_S_Arkoy! -->
+    <!-- 4. Obývacia izba -->
     <div id="obyvacka" class="view-card">
       <div class="view-header">
         <h3>4. Obývacia izba s klenbovým oblúkom</h3>
-        <span class="view-tag">Interiér &middot; Vinyl vzor rybina</span>
+        <span class="view-tag">Interiér &middot; Vinylová podlaha rybina</span>
       </div>
       <div class="compare-container" data-container>
-        <img class="compare-img before" src="pred_rekonstrukciou/04_pred_obyvacia_izba.jpg" alt="Pred rekonštrukciou (Pôvodný stav photo 20)">
+        <img class="compare-img before" src="pred_rekonstrukciou/04_pred_obyvacia_izba.jpg" alt="Pôvodný stav obývačky">
         <div class="compare-img after-container" data-after>
-          <img class="after-inner" src="04_Gostinaya_S_Arkoy.jpg" alt="Po rekonštrukcii" data-inner>
+          <img class="after-inner" src="04_Gostinaya_S_Arkoy.jpg" alt="Obývacia izba po rekonštrukcii" data-inner>
         </div>
         <div class="slider-handle" data-handle></div>
         <div class="label-badge label-after">PO REKONŠTRUKCII</div>
-        <div class="label-badge label-before">PÔVODNÝ STAV (UHOL OKNO &amp; OBLÚK)</div>
+        <div class="label-badge label-before">PÔVODNÝ STAV</div>
       </div>
       <div class="view-content">
-        <p class="view-desc">Exaktné zladenie pohľadu: Vľavo dvere na balkón so žalúziami, vpravo okno s novým radiátorom Korado a centrálny klenbový oblúk do vedľajšej izby. Havarijný prepadnutý podklad bol nahradený suchou podlahou Rigidur E25 a novým rigidným vinylom kladeným do vzoru rybina.</p>
+        <p class="view-desc">Exaktná zhoda pohľadu: Vľavo dvere na balkón so žalúziami, vpravo okno s novým radiátorom a centrálny klenbový oblúk do vedľajšej izby. Pôvodný podklad bol sanovaný suchou podlahou Rigidur E25 s podsypom Liapor a novým rigidným vinylom ukladaným do vzoru rybina.</p>
         <div class="specs-grid">
           <div class="spec-item">
-            <strong>Vinylová podlaha vzor rybina</strong>
-            <span>Rigidný kompozitný vinyl so zámkom (dub svetlý)</span>
-            <div class="spec-source">SIKO / Hornbach (pol. 82)</div>
+            <strong>Podlahová krytina rybina</strong>
+            <span>Rigidný kompozitný vinyl so zámkovým spojom v dekore prírodného duba</span>
+            <div class="spec-source">Položka 82 rozpočtu</div>
           </div>
           <div class="spec-item">
-            <strong>Sádrové stierky a oblúk</strong>
-            <span>Rimano Glet XL vyhladená do stratena</span>
-            <div class="spec-source">Dokonale hladké steny</div>
+            <strong>Sádrové stierky a portál</strong>
+            <span>Stierka Rimano Glet XL vyhladená do stratena po celom oblúku</span>
+            <div class="spec-source">Hladký povrch Q3</div>
           </div>
           <div class="spec-item">
             <strong>Vykurovacie teleso</strong>
-            <span>Korado Radik Klasik biely panelový radiátor</span>
-            <div class="spec-source">Korado Česká republika</div>
+            <span>Plochý panelový radiátor Korado Radik Klasik s termostatickou hlavicou</span>
+            <div class="spec-source">Vysoká účinnosť</div>
           </div>
           <div class="spec-item">
-            <strong>Závesný strop</strong>
-            <span>Sadrokartónový podhľad CD Q2 so zapustenými LED bodovkami</span>
+            <strong>Závesný podhľad</strong>
+            <span>Sadrokartónový podhľad CD Q2 so zapustenými LED bodovými svietidlami</span>
             <div class="spec-source">Rigips systém</div>
           </div>
         </div>
@@ -1276,36 +1115,36 @@
         <span class="view-tag">Interiér &middot; Schodisko masív jaseň (3 000 €)</span>
       </div>
       <div class="compare-container" data-container>
-        <img class="compare-img before" src="pred_rekonstrukciou/06_pred_hala_schodisko.jpg" alt="Pred rekonštrukciou">
+        <img class="compare-img before" src="pred_rekonstrukciou/06_pred_hala_schodisko.jpg" alt="Pôvodný stav schodiska">
         <div class="compare-img after-container" data-after>
-          <img class="after-inner" src="06_Prihozhaya_Lestnitsa.jpg" alt="Po rekonštrukcii" data-inner>
+          <img class="after-inner" src="06_Prihozhaya_Lestnitsa.jpg" alt="Schodisko po rekonštrukcii" data-inner>
         </div>
         <div class="slider-handle" data-handle></div>
         <div class="label-badge label-after">PO REKONŠTRUKCII</div>
         <div class="label-badge label-before">PÔVODNÝ STAV</div>
       </div>
       <div class="view-content">
-        <p class="view-desc">Nové schodiskové stupne z masívneho tvrdého jaseňa s vysokou odolnosťou proti opotrebeniu. Pôvodné tmavé luxfery a krivá stena boli nahradené novou presnou murovanou priečkou Ytong 150 mm s presklenými dverami.</p>
+        <p class="view-desc">Nové nášľapné stupne z masívneho tvrdého jaseňa s vysokou odolnosťou proti opotrebeniu a matným lakom. Pôvodné tmavé luxfery a krivá stena boli nahradené novou murovanou priečkou Ytong 150 mm s presklenými interiérovými dverami.</p>
         <div class="specs-grid">
           <div class="spec-item">
             <strong>Masívny jaseň</strong>
-            <span>Stupnice z tvrdého jaseňového dreva s matným PU lakom</span>
-            <div class="spec-source">Slovenský masív (3 000 €)</div>
+            <span>Stupnice z tvrdého jaseňového dreva ošetrené bezfarebným PU lakom</span>
+            <div class="spec-source">Dielenská zákazková výroba</div>
           </div>
           <div class="spec-item">
             <strong>Murovaná priečka</strong>
-            <span>Priečka z tvárnic Ytong hr. 150 mm s armovaním</span>
+            <span>Priečka z pórobetónových tvárnic Ytong 150 mm s armovacou tkaninou</span>
             <div class="spec-source">Presné murivo Ytong</div>
           </div>
           <div class="spec-item">
-            <strong>Dlažba a vinyl</strong>
-            <span>Kombinácia vstupného gresu a vinylovej podlahy</span>
-            <div class="spec-source">Odolné voči vode a špine</div>
+            <strong>Podlahový prechod</strong>
+            <span>Odolný gres v zóne vstupu prechádzajúci do obytnej podlahy</span>
+            <div class="spec-source">Čistá dilatácia</div>
           </div>
           <div class="spec-item">
             <strong>Interiérové dvere</strong>
-            <span>Dvere s obložkovou zárubňou ERKADO / Porta</span>
-            <div class="spec-source">SIKO sortiment</div>
+            <span>Dverné krídlo s obložkovou zárubňou v matnom vyhotovení</span>
+            <div class="spec-source">Kompletná montáž</div>
           </div>
         </div>
       </div>
@@ -1315,39 +1154,39 @@
     <div id="kuchyna" class="view-card">
       <div class="view-header">
         <h3>6. Kuchyňa a jedálenský kút</h3>
-        <span class="view-tag">Interiér &middot; Zástena 0,6 m SIKO</span>
+        <span class="view-tag">Interiér &middot; Zástena 0,6 m &middot; 16 prípojok</span>
       </div>
       <div class="compare-container" data-container>
-        <img class="compare-img before" src="pred_rekonstrukciou/05_pred_kuchyna.jpg" alt="Pred rekonštrukciou">
+        <img class="compare-img before" src="pred_rekonstrukciou/05_pred_kuchyna.jpg" alt="Pôvodný stav kuchyne">
         <div class="compare-img after-container" data-after>
-          <img class="after-inner" src="05_Kuhnya_Stolovaya.jpg" alt="Po rekonštrukcii" data-inner>
+          <img class="after-inner" src="05_Kuhnya_Stolovaya.jpg" alt="Kuchyňa po rekonštrukcii" data-inner>
         </div>
         <div class="slider-handle" data-handle></div>
         <div class="label-badge label-after">PO REKONŠTRUKCII</div>
         <div class="label-badge label-before">PÔVODNÝ STAV</div>
       </div>
       <div class="view-content">
-        <p class="view-desc">Kompletné vyčistenie kuchynského priestoru po havarijnom stave, zhotovenie nových rozvodov vody, kanalizácie a elektriny, pokládka odolnej podlahy a realizácia keramického obkladu steny (zástena za linkou do výšky 60 cm).</p>
+        <p class="view-desc">Kompletná sanácia priestoru po pôvodnom havarijnom stave, zhotovenie nových rozvodov vody, odpadov a elektriny, pokládka vodeodolnej podlahy a realizácia keramického obkladu steny za linkou do výšky 60 cm.</p>
         <div class="specs-grid">
           <div class="spec-item">
-            <strong>Obklad za linkou (fartuk)</strong>
-            <span>Gresový obklad výšky 60 cm zo SIKO</span>
-            <div class="spec-source">SIKO Kúpeľne sortiment</div>
+            <strong>Keramická zástena</strong>
+            <span>Gresový veľkoformátový obklad výšky 60 cm za pracovnou linkou</span>
+            <div class="spec-source">Jednoduchá údržba</div>
           </div>
           <div class="spec-item">
             <strong>Zdravotechnické prípojky</strong>
-            <span>Nové vedenia vody a odpadu pre drez a umývačku</span>
-            <div class="spec-source">16 prípojných bodov v dome</div>
+            <span>Nové rozvody vody a kanalizácie pre drez a umývačku riadu</span>
+            <div class="spec-source">16 prípojných bodov</div>
           </div>
           <div class="spec-item">
-            <strong>Kuchynská linka</strong>
-            <span>Inšpirácia modulárnej linky (biela matná / dub)</span>
-            <div class="spec-source">Decodom / OBI / IKEA</div>
+            <strong>Elektroinštalácia</strong>
+            <span>Samostatný trojfázový okruh 400V pre varnú dosku a zásuvkové okruhy</span>
+            <div class="spec-source">Nová rozvodnica</div>
           </div>
           <div class="spec-item">
             <strong>Podlahová krytina</strong>
-            <span>Vodeodolný rigidný SPC vinyl s tichým nášľapom</span>
-            <div class="spec-source">Vhodné pre kuchyne</div>
+            <span>Rigidný kompozitný SPC vinyl odolný voči vode a poškriabaniu</span>
+            <div class="spec-source">Vysoká trieda záťaže</div>
           </div>
         </div>
       </div>
@@ -1357,87 +1196,225 @@
     <div id="spalna" class="view-card">
       <div class="view-header">
         <h3>7. Hlavná spálňa na poschodí</h3>
-        <span class="view-tag">Interiér &middot; Lamelový panel OBI</span>
+        <span class="view-tag">Interiér &middot; Drevený obklad &middot; Nový radiátor</span>
       </div>
       <div class="compare-container" data-container>
-        <img class="compare-img before" src="pred_rekonstrukciou/07_pred_spalna.jpg" alt="Pred rekonštrukciou (Pôvodný stav photo 59)">
+        <img class="compare-img before" src="pred_rekonstrukciou/07_pred_spalna.jpg" alt="Pôvodný stav spálne">
         <div class="compare-img after-container" data-after>
-          <img class="after-inner" src="07_Master_Spalnya.jpg" alt="Po rekonštrukcii" data-inner>
+          <img class="after-inner" src="07_Master_Spalnya.jpg" alt="Spálňa po rekonštrukcii" data-inner>
         </div>
         <div class="slider-handle" data-handle></div>
         <div class="label-badge label-after">PO REKONŠTRUKCII</div>
         <div class="label-badge label-before">PÔVODNÝ STAV</div>
       </div>
       <div class="view-content">
-        <p class="view-desc">Odstránenie starého zažltnutého koberca a opadávajúcich omietok. Nová podlaha, steny vystierkované sádrovou stierkou Rimano Glet XL, nové plastové okno a nový radiátor Korado. Za čelom postele je použitý akustický drevený panel z OBI.</p>
+        <p class="view-desc">Odstránenie starého koberca a poškodených omietok. Nová rovná podlaha, steny vystierkované sádrovou stierkou Rimano Glet XL, nové plastové okno a nový radiátor Korado s termostatickou hlavicou. Za čelom postele je inštalovaný akustický drevený lamelový panel.</p>
         <div class="specs-grid">
           <div class="spec-item">
             <strong>Akustický lamelový panel</strong>
-            <span>Dýhované dubové lamely na čiernom plstenom podklade (60x240 cm)</span>
-            <div class="spec-source">OBI / Hornbach</div>
+            <span>Dýhované dubové lamely na akustickom plstenom podklade</span>
+            <div class="spec-source">Dizajnový akcent</div>
           </div>
           <div class="spec-item">
-            <strong>Podlaha v spálni</strong>
-            <span>Kompozitný rigidný vinyl s integrovanou tlmiacou podložkou</span>
-            <div class="spec-source">Tichý a teplý na dotyk</div>
+            <strong>Podlahová konštrukcia</strong>
+            <span>Suchá podlaha s tlmiacou kročajovou podložkou a vinylom</span>
+            <div class="spec-source">Tichý a teplý povrch</div>
           </div>
           <div class="spec-item">
             <strong>Vykurovacie teleso</strong>
-            <span>Korado Radik s termostatickou hlavicou</span>
-            <div class="spec-source">Optimálna nočná teplota</div>
+            <span>Korado Radik s citlivou reguláciou teploty</span>
+            <div class="spec-source">Tepelný komfort</div>
           </div>
           <div class="spec-item">
-            <strong>Sádrové stierky</strong>
-            <span>Rimano Glet XL a akrylátová biela maľba Weber</span>
-            <div class="spec-source">Zdravá vnútorná klíma</div>
+            <strong>Povrchová úprava stien</strong>
+            <span>Rimano Glet XL s priedušnou matnou bielou maľbou</span>
+            <div class="spec-source">Zdravá klíma</div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- 8. Kúpeľňa SIKO -->
+    <!-- 8. Kúpeľňa -->
     <div id="kupelna" class="view-card">
       <div class="view-header">
-        <h3>8. Kúpeľňa na kľúč (SIKO Kúpeľne)</h3>
+        <h3>8. Kúpeľňa na kľúč s Jolly hranami</h3>
         <span class="view-tag">Sanita &middot; Kúpeľňa na kľúč (7 500 €)</span>
       </div>
       <div class="compare-container" data-container>
-        <img class="compare-img before" src="pred_rekonstrukciou/08_pred_kupelna.jpg" alt="Pred rekonštrukciou (Pôvodný stav photo 23)">
+        <img class="compare-img before" src="pred_rekonstrukciou/08_pred_kupelna.jpg" alt="Pôvodný stav kúpeľne">
         <div class="compare-img after-container" data-after>
-          <img class="after-inner" src="08_Vannaya_Komnata.jpg" alt="Po rekonštrukcii" data-inner>
+          <img class="after-inner" src="08_Vannaya_Komnata.jpg" alt="Kúpeľňa po rekonštrukcii" data-inner>
         </div>
         <div class="slider-handle" data-handle></div>
         <div class="label-badge label-after">PO REKONŠTRUKCII</div>
         <div class="label-badge label-before">PÔVODNÝ STAV</div>
       </div>
       <div class="view-content">
-        <p class="view-desc">Kompletná rekonštrukcia kúpeľne na kľúč podľa zmluvnej položky za 7 500 €: omietky, hydroizolačný náter s páskami, veľkoformátový gres do výšky 2,1 m s Jolly hranami brúsenými pod uhlom 45°, podomietkový Geberit Duofix, akrylátová vaňa so sklenenou zástienkou a závesná skrinka Naturel zo SIKO.</p>
+        <p class="view-desc">Kompletná realizácia kúpeľne na kľúč podľa zmluvnej položky za 7 500 €: omietky, hydroizolačné nátery s tesniacimi páskami, veľkoformátový rektifikovaný gres do výšky 2,1 m so zabrúsením vonkajších hrán na 45° (Jolly hrany), podomietkový modul Geberit Duofix, akrylátová vaňa so sklenenou zástienkou a závesná skrinka s umývadlom.</p>
         <div class="specs-grid">
           <div class="spec-item">
-            <strong>Obklad a Jolly hrany</strong>
+            <strong>Veľkoformátový obklad</strong>
             <span>Rektifikovaný gres do v=2,1 m so zabrúsením 45° Jolly</span>
-            <div class="spec-source">SIKO Kúpeľne (bez líšt)</div>
+            <div class="spec-source">Čisté spoje bez líšt</div>
           </div>
           <div class="spec-item">
-            <strong>Podomietkový Geberit</strong>
-            <span>Geberit Duofix so splachovacou nádržkou a tlačidlom</span>
-            <div class="spec-source">Originál Geberit Švajčiarsko</div>
+            <strong>Podomietkový systém</strong>
+            <span>Originálny závesný modul Geberit Duofix so splachovaním</span>
+            <div class="spec-source">Zabudovaná nádržka</div>
           </div>
           <div class="spec-item">
             <strong>Vaňa so zástenou</strong>
-            <span>Akrylátová vaňa s nožičkami a sklenenou zástienkou</span>
-            <div class="spec-source">Komfort sprchovania aj kúpeľa</div>
+            <span>Akrylátová vystužená vaňa so sklenenou sprchovou zástenou</span>
+            <div class="spec-source">Komfortná kombinácia</div>
           </div>
           <div class="spec-item">
-            <strong>Umývadlová zostava</strong>
-            <span>Závesná skrinka Naturel so zásuvkami s pomalým dovieraním</span>
-            <div class="spec-source">SIKO sortiment</div>
+            <strong>Umývadlový nábytok</strong>
+            <span>Závesná skrinka s pomalým dovieraním a vstavaným umývadlom</span>
+            <div class="spec-source">Odolné voči vlhkosti</div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- SEKCIA IV: POLOŽKOVÝ ROZPOČET & CENY (VRÁTENÉ V PLNOM ROZSAHU) -->
+    <!-- NOVÝ PODODDIEL: INTERIÉROVÉ MIESTNOSTI V ČISTOM STAVEBNOM ŠTANDARDE (BEZ NÁBYTKU) -->
+    <div id="interier-bez-nabytku" class="unfurnished-subsection-card">
+      <div class="unfurnished-sub-header">
+        <div class="section-roman">Pododdiel &middot; Architektonický štandard</div>
+        <h3>Miestnosti v čistom stavebnom vyhotovení bez nábytku</h3>
+        <p>V tomto pododdiele sú zobrazené interiérové priestory domu v dokončenom stavebnom štandarde bez nábytku (hladené sádrové steny, nová podlaha so vzorom rybina, zapustené osvetlenie a pripravená infraštruktúra), čo umožňuje klientke jednoducho si predstaviť vlastné usporiadanie nábytku.</p>
+      </div>
+
+      <div class="unfurnished-rooms-grid">
+        
+        <!-- Obývacia izba -->
+        <div class="room-card">
+          <div class="room-card-img-wrap">
+            <img src="04_Gostinaya_S_Arkoy.jpg" alt="Obývacia izba v čistom stave">
+            <span class="room-card-badge">Denná zóna &middot; Prízemie</span>
+          </div>
+          <div class="room-card-content">
+            <div class="room-card-title-row">
+              <h4>Obývacia izba a klenba</h4>
+              <span class="room-card-dims">4,26 &times; 3,41 m</span>
+            </div>
+            <div class="room-card-status">Položená podlaha rybina &middot; Sádrový oblúk</div>
+            <ul class="room-card-specs">
+              <li>Položený rigidný kompozitný vinyl so vzorom rybina v dekore dub</li>
+              <li>Plynulo vyrovnaný klenbový oblúk Rimano Glet XL do vedľajšej izby</li>
+              <li>Biely závesný SDK podhľad so zapustenými LED bodovými svietidlami</li>
+              <li>Nový plochý radiátor Korado Radik Klasik pod oknom</li>
+            </ul>
+            <div class="room-card-concept">
+              <strong>Možnosť zariadenia:</strong>
+              Voľná plocha ponúka variabilitu pre umiestnenie rohovej sedacej súpravy, konferenčného stolíka a TV zostavy s priamym priechodom do nadväzujúcej jedálne.
+            </div>
+          </div>
+        </div>
+
+        <!-- Schodisko a hala -->
+        <div class="room-card">
+          <div class="room-card-img-wrap">
+            <img src="06_Prihozhaya_Lestnitsa.jpg" alt="Schodisko z masívneho jaseňa">
+            <span class="room-card-badge">Vstupná hala &middot; Schodisko</span>
+          </div>
+          <div class="room-card-content">
+            <div class="room-card-title-row">
+              <h4>Hala a jaseňové schodisko</h4>
+              <span class="room-card-dims">2,74 &times; 3,06 m</span>
+            </div>
+            <div class="room-card-status">Masívny tvrdý jaseň &middot; Nová stena Ytong</div>
+            <ul class="room-card-specs">
+              <li>Nové nášľapné stupne z tvrdého slovenského jaseňa s matným PU lakom</li>
+              <li>Murovaná deliaca stena z presných tvárnic Ytong hrúbky 150 mm</li>
+              <li>Kombinovaná podlaha zo vstupného gresu a vinylových lamiel</li>
+              <li>Presklené dverné krídlo prinášajúce prirodzené svetlo do chodby</li>
+            </ul>
+            <div class="room-card-concept">
+              <strong>Možnosť zariadenia:</strong>
+              Rovná stena z tvárnic Ytong je pripravená na montáž vstavanej zrkadlovej šatníkovej skrine na mieru bez potreby dodatočných stavebných úprav.
+            </div>
+          </div>
+        </div>
+
+        <!-- Kuchyňa -->
+        <div class="room-card">
+          <div class="room-card-img-wrap">
+            <img src="05_Kuhnya_Stolovaya.jpg" alt="Kuchyňa a jedálenský kút">
+            <span class="room-card-badge">Kuchynská časť</span>
+          </div>
+          <div class="room-card-content">
+            <div class="room-card-title-row">
+              <h4>Kuchyňa a jedáleň</h4>
+              <span class="room-card-dims">2,32 &times; 3,42 m</span>
+            </div>
+            <div class="room-card-status">Pripravené inštalácie &middot; Obklad 0,6 m</div>
+            <ul class="room-card-specs">
+              <li>Nové rozvody vody a kanalizácie pripravené pre drez a umývačku</li>
+              <li>Samostatný trojfázový okruh 400V pre indukčnú varnú dosku</li>
+              <li>Položená vodeodolná podlahová krytina s jednoduchou údržbou</li>
+              <li>Keramický obklad steny (fartuk) do výšky 60 cm</li>
+            </ul>
+            <div class="room-card-concept">
+              <strong>Možnosť zariadenia:</strong>
+              Pripravené vývody presne kopírujú štúdiu rohovej kuchynskej linky s priestorom pre chladničku a nadväzujúci jedálenský stôl.
+            </div>
+          </div>
+        </div>
+
+        <!-- Hlavná spálňa -->
+        <div class="room-card">
+          <div class="room-card-img-wrap">
+            <img src="07_Master_Spalnya.jpg" alt="Hlavná spálňa na poschodí">
+            <span class="room-card-badge">Nočná zóna &middot; Poschodie</span>
+          </div>
+          <div class="room-card-content">
+            <div class="room-card-title-row">
+              <h4>Hlavná spálňa</h4>
+              <span class="room-card-dims">4,15 &times; 3,60 m</span>
+            </div>
+            <div class="room-card-status">Vyrovnané steny &middot; Tichá podlaha</div>
+            <ul class="room-card-specs">
+              <li>Vyrovnaný podklad s akustickou kročajovou podložkou a vinylom</li>
+              <li>Hladké sádrové stierky Rimano s bielou hygienickou maľbou</li>
+              <li>Nové okno s trojsklom a radiátor Korado s termoreguláciou</li>
+              <li>Inštalované nočné elektrické vývody po stranách budúcej postele</li>
+            </ul>
+            <div class="room-card-concept">
+              <strong>Možnosť zariadenia:</strong>
+              Veľkorysá dispozícia umožňuje umiestnenie manželskej postele šírky 180 cm s nočnými stolíkmi a priestrannej skrine pozdĺž bočnej steny.
+            </div>
+          </div>
+        </div>
+
+        <!-- Kúpeľňa -->
+        <div class="room-card">
+          <div class="room-card-img-wrap">
+            <img src="08_Vannaya_Komnata.jpg" alt="Kúpeľňa na kľúč">
+            <span class="room-card-badge">Sanita na kľúč</span>
+          </div>
+          <div class="room-card-content">
+            <div class="room-card-title-row">
+              <h4>Kúpeľňa na kľúč</h4>
+              <span class="room-card-dims">1,64 &times; 2,26 m</span>
+            </div>
+            <div class="room-card-status">Dokončená sanita &middot; Jolly hrany 45°</div>
+            <ul class="room-card-specs">
+              <li>Veľkoformátový rektifikovaný gres do výšky 2,1 m so 45° zabrúsením</li>
+              <li>Zabudovaný závesný WC modul Geberit Duofix</li>
+              <li>Akrylátová vaňa so sklenenou zástienkou pre sprchovanie</li>
+              <li>Závesná umývadlová skrinka so zásuvkami s pomalým dovieraním</li>
+            </ul>
+            <div class="room-card-concept">
+              <strong>Stav na užívanie:</strong>
+              Kúpeľňa je dokončená na kľúč vrátane armatúr a sanity, plne funkčná na okamžité užívanie od prvého dňa odovzdania stavby.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SEKCIA: INVESTIČNÝ POLOŽKOVÝ ROZPOČET -->
     <div id="rozpocet" class="table-card">
       <div class="table-header-wrap">
         <div>
@@ -1445,7 +1422,7 @@
           <p>Oficiálna špecifikácia cenovej ponuky CP26082026 &middot; Dodávateľ: Modul Company s.r.o. (IČO: 56275421)</p>
         </div>
         <div style="text-align: right;">
-          <span style="font-size: 13px; color: var(--gold-dark); font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Celková suma diela s DPH:</span>
+          <span style="font-size: 12px; color: var(--gold-dark); font-weight: 600; text-transform: uppercase; letter-spacing: 1.2px;">Celková suma diela s DPH:</span>
           <div style="font-family: var(--font-serif); font-size: 32px; font-weight: 700; color: var(--gold-dark);">111 354,36 €</div>
         </div>
       </div>
@@ -1627,8 +1604,8 @@
               <td class="td-num">3 000,00 €</td>
             </tr>
             <tr>
-              <td>Kúpeľňa na kľúč (SIKO)</td>
-              <td>Kompletná kúpeľňa SIKO: obklad v=2,1 m, Jolly hrany 45°, Geberit, vaňa, sanita</td>
+              <td>Kúpeľňa na kľúč</td>
+              <td>Kompletná kúpeľňa: obklad v=2,1 m, Jolly hrany 45°, Geberit, vaňa, sanita</td>
               <td class="td-num">1,00</td>
               <td>kpl</td>
               <td class="td-num">7 500,00 €</td>
@@ -1652,12 +1629,12 @@
               <td colspan="4">CELKOVÁ CENA BEZ DPH</td>
               <td class="td-num" colspan="2">90 532,00 €</td>
             </tr>
-            <tr style="background: #201e1a; color: #dfceb8; font-weight: 600;">
+            <tr style="background: #1f1d19; color: #dfceb8; font-weight: 600;">
               <td colspan="4">DPH (23 %)</td>
               <td class="td-num" colspan="2">20 822,36 €</td>
             </tr>
             <tr class="total-row" style="background: #000; border-top: 2px solid var(--gold-primary);">
-              <td colspan="4" style="font-size: 16px; letter-spacing: 1px;">CELKOVÁ INVESTÍCIA S DPH (23 %)</td>
+              <td colspan="4" style="font-size: 15px; letter-spacing: 1px;">CELKOVÁ INVESTÍCIA S DPH (23 %)</td>
               <td class="td-num" colspan="2" style="font-size: 24px; color: var(--text-gold);">111 354,36 €</td>
             </tr>
           </tbody>
@@ -1665,22 +1642,10 @@
       </div>
     </div>
 
-    <!-- FOOTER WITH PRERAB BRANDING -->
+    <!-- FOOTER WITH PRERAB ORIGINAL LOGO -->
     <footer>
-      <div class="footer-logo">
-        <svg viewBox="0 0 760 170" width="100%" height="100%">
-          <use href="#goldGrad"/>
-          <g fill="#c5a880" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="106" letter-spacing="4px">
-            <text x="20" y="124">PRERAB</text>
-          </g>
-          <g transform="translate(505, 18)" stroke="#c5a880" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M 68 18 L 138 68 L 208 120" stroke-width="4.5"/>
-            <path d="M 68 18 L 10 68 L 10 120" stroke-width="4"/>
-            <line x1="18" y1="68" x2="18" y2="120" stroke-width="4"/>
-            <line x1="138" y1="68" x2="138" y2="120" stroke-width="4"/>
-            <line x1="10" y1="120" x2="200" y2="120" stroke-width="4"/>
-          </g>
-        </svg>
+      <div class="footer-logo-wrap">
+        <img src="logo_prerab.png" alt="PRERAB" class="footer-logo">
       </div>
       <p>&copy; 2026 <strong>PRERAB &middot; Autorský architektonický a stavebný projekt</strong></p>
       <p>Generálny zhotoviteľ: <strong>Modul Company s.r.o.</strong> &middot; Karpatské námestie 7770/10A, 831 06 Bratislava</p>
