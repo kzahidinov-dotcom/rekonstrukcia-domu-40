@@ -22,8 +22,8 @@ Oficiálna klientska prezentácia komplexnej rekonštrukcie rodinného domu v Br
    - Stav po rekonštrukcii („Po“): Nový luxusný render kuchyne dodaný investorom (`05_Kuchyna_Nova.jpg`): kuchynský ostrov s vertikálnym lamelovým dekorom a travertínovou pracovnou doskou, zapustená varná doska, nadväzujúce jedálenské sedenie a okno do záhrady.
 
 4. **Samostatná položka: Fasádne práce (31 000,00 €)**:
-   - Zateplenie obvodového plášťa EPS-F, silikónová omietka greige, úprava sokla Styrodur XPS a hliníkové lamelové zábradlie balkóna RAL 7016.
-   - **Nesumuje sa k sume rekonštrukcie interiéru** &mdash; vystupuje ako nezávislá samostatná položka / etapa.
+   - Uvedená ako čistá položka bez zbytočného rozpisovania.
+   - **Nesumuje sa k sume rekonštrukcie interiéru** &mdash; vystupuje ako nezávislá samostatná položka.
 
 5. **Hierarchia cien &mdash; Hlavná cena bez DPH**:
    - **Hlavná cena rekonštrukcie bez DPH: 90 532,00 €** (veľké zlaté zvýraznenie v záhlaví, v sumári aj vo finálnom riadku tabuľky)
