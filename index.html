@@ -883,9 +883,12 @@
           <p>Kalkulácia stavebných prác a dodávok materiálu podľa položkového rozpočtu CP26082026. Zahŕňa búracie práce, odvoz sute, omietky Rimano Glet XL, sadrokartónové podhľady, novú elektroinštaláciu s revíziou, suchú podlahu Rigidur E25 s rigidným vinylom, schodisko z masívneho jaseňa a kompletnú kúpeľňu s Jolly hranami na kľúč.</p>
         </div>
         <div class="pricing-numbers">
-          <div class="pricing-total-label">Cena realizácie bez DPH</div>
+          <div class="pricing-total-label">Cena rekonštrukcie bez DPH</div>
           <div class="pricing-total-value">90 532,00 €</div>
           <div class="pricing-sub">Cena s DPH (23 %): <strong>111 354,36 €</strong> &middot; DPH 23 %: <strong>20 822,36 €</strong></div>
+          <div style="margin-top: 10px; padding-top: 8px; border-top: 1px dashed rgba(197, 168, 128, 0.35); font-size: 12px; color: #d5be9d;">
+            Fasádne práce (samostatne): <strong style="color: #fff; font-size: 14px;">31 000,00 €</strong> &middot; <span style="color: #9c9486;">nesumuje sa k rekonštrukcii</span>
+          </div>
         </div>
       </div>
     </div>
@@ -1032,10 +1035,17 @@
           <h3>Investičný položkový rozpočet stavby &mdash; Koliba</h3>
           <p>Špecifikácia položiek podľa cenovej ponuky CP26082026 &middot; Dodávateľ: Modul Company s.r.o. (IČO: 56275421)</p>
         </div>
-        <div style="text-align: right;">
-          <span style="font-size: 12px; color: var(--gold-dark); font-weight: 600; text-transform: uppercase; letter-spacing: 1.2px;">Cena diela bez DPH:</span>
-          <div style="font-family: var(--font-serif); font-size: 32px; font-weight: 700; color: var(--gold-dark);">90 532,00 €</div>
-          <div style="font-size: 12.5px; color: var(--text-muted); margin-top: 3px; font-weight: 500;">s DPH (23 %): 111 354,36 €</div>
+        <div style="text-align: right; display: flex; flex-direction: column; gap: 8px;">
+          <div>
+            <span style="font-size: 11px; color: var(--gold-dark); font-weight: 600; text-transform: uppercase; letter-spacing: 1.2px;">Cena rekonštrukcie bez DPH:</span>
+            <div style="font-family: var(--font-serif); font-size: 32px; font-weight: 700; color: var(--gold-dark); line-height: 1.1;">90 532,00 €</div>
+            <div style="font-size: 12px; color: var(--text-muted); margin-top: 2px;">s DPH (23 %): 111 354,36 €</div>
+          </div>
+          <div style="padding-top: 8px; border-top: 1px dashed rgba(197, 168, 128, 0.4);">
+            <span style="font-size: 11px; color: #5a544b; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Fasádne práce (samostatná položka):</span>
+            <div style="font-family: var(--font-serif); font-size: 22px; font-weight: 700; color: #151412; line-height: 1.1;">31 000,00 €</div>
+            <div style="font-size: 11px; color: var(--gold-dark); font-weight: 500;">samostatná opcia &middot; nesumuje sa k rekonštrukcii</div>
+          </div>
         </div>
       </div>
 
@@ -1236,18 +1246,57 @@
               <td class="td-num">3 100,00 €</td>
             </tr>
 
-            <!-- SÚHRN -->
+            <!-- SÚHRN REKONŠTRUKCIE -->
             <tr class="total-row" style="background: #000; border-top: 2px solid var(--gold-primary);">
-              <td colspan="4" style="font-size: 15px; letter-spacing: 1.2px; color: #ffffff;">CELKOVÁ CENA BEZ DPH</td>
+              <td colspan="4" style="font-size: 15px; letter-spacing: 1.2px; color: #ffffff;">CELKOVÁ CENA REKONŠTRUKCIE BEZ DPH</td>
               <td class="td-num" colspan="2" style="font-size: 26px; color: var(--text-gold); font-weight: 700;">90 532,00 €</td>
             </tr>
             <tr style="background: #181714; color: #8e877c; font-size: 12.5px;">
-              <td colspan="4">DPH (23 %)</td>
+              <td colspan="4">DPH (23 %) z rekonštrukcie</td>
               <td class="td-num" colspan="2" style="color: #aba396; font-size: 12.5px;">20 822,36 €</td>
             </tr>
             <tr style="background: #12110f; color: #8a8377; font-size: 13px;">
-              <td colspan="4">Informatívna suma s DPH (23 %)</td>
+              <td colspan="4">Informatívna suma rekonštrukcie s DPH (23 %)</td>
               <td class="td-num" colspan="2" style="color: #b5ada1; font-weight: 500; font-size: 13px;">111 354,36 €</td>
+            </tr>
+
+            <!-- SAMOSTATNÁ POLOŽKA: FASÁDNE PRÁCE -->
+            <tr style="height: 18px;"><td colspan="6" style="background: transparent; border: none;"></td></tr>
+            <tr class="section-row" style="background: #f1ebd9; border-top: 2px solid var(--gold-dark);">
+              <td colspan="4" style="color: #24201a; font-weight: 700; font-size: 12.5px; letter-spacing: 0.8px;">
+                7. SAMOSTATNÁ POLOŽKA: FASÁDNE PRÁCE A ZATEPLENIE (NESUMUJE SA K REKONŠTRUKCII)
+              </td>
+              <td class="td-num" colspan="2" style="font-size: 13px; color: #735d3f; font-weight: 700;">SAMOSTATNÁ POLOŽKA</td>
+            </tr>
+            <tr>
+              <td>Fasádny systém</td>
+              <td>Kontaktný zatepľovací systém EPS-F, výstužná vrstva so sieťkou, lešenie a montáž</td>
+              <td class="td-num">1,00</td>
+              <td>kpl</td>
+              <td class="td-num">17 500,00 €</td>
+              <td class="td-num">17 500,00 €</td>
+            </tr>
+            <tr>
+              <td>Finálna omietka</td>
+              <td>Silikónová omietka 1,5 mm odtieň greige, penetrácia, lišty, okapové nosy</td>
+              <td class="td-num">1,00</td>
+              <td>kpl</td>
+              <td class="td-num">6 500,00 €</td>
+              <td class="td-num">6 500,00 €</td>
+            </tr>
+            <tr>
+              <td>Sokel a balkón</td>
+              <td>Zateplenie sokla XPS Styrodur, hydroizolácia, balkónové hliníkové zábradlie RAL 7016</td>
+              <td class="td-num">1,00</td>
+              <td>kpl</td>
+              <td class="td-num">7 000,00 €</td>
+              <td class="td-num">7 000,00 €</td>
+            </tr>
+            <tr style="background: #181715; color: #ffffff;">
+              <td colspan="4" style="font-size: 14px; letter-spacing: 0.8px; color: #f4eee2; font-weight: 600; padding: 14px;">
+                CELKOM FASÁDNE PRÁCE (SAMOSTATNÁ POLOŽKA &mdash; NESUMUJE SA K SUME REKONŠTRUKCIE)
+              </td>
+              <td class="td-num" colspan="2" style="font-size: 22px; color: var(--text-gold); font-weight: 700; padding: 14px;">31 000,00 €</td>
             </tr>
           </tbody>
         </table>
