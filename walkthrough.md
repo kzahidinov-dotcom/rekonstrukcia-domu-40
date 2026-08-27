@@ -30,3 +30,6 @@ Oficiálna klientska prezentácia komplexnej rekonštrukcie rodinného domu v Br
    - DPH 23 %: **20 822,36 €** (v druhom pláne)
    - Informatívna suma rekonštrukcie s DPH: **111 354,36 €** (v druhom pláne)
    - Fasádne práce (samostatná položka): **31 000,00 €** (nezávisle)
+
+6. **Hlavička projektu &mdash; Čistý štandard bez vody**:
+   - Odstránený akýkoľvek voľný textový popis pod názvom projektu. Hlavička teraz obsahuje iba logo, oficiálny titul projektu, zlatú linku a tlačidlá pre export do PDF a navigáciu.
