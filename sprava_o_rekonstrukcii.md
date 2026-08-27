@@ -7,26 +7,29 @@ Oficiálna klientska prezentácia komplexnej rekonštrukcie rodinného domu v Br
 
 ---
 
-## Najnovšie zapracované požiadavky:
+## Prehľad aktuálneho stavu:
 
 1. **Miestnosť č. 6 (Kuchyňa)**:
-   - Pôvodný stav („Pred“): Ponechaná autentická fotografia č. 27 (`photo_27_2026-08-27_14-06-47.jpg`), zachytávajúca stavebný stav s oknom do záhrady, vodovodným vývodom, starým obkladom a pripravenou podlahou.
-   - Stav po rekonštrukcii („Po“): Nasadený exkluzívny architektonický render dodaný klientom (`05_Kuchyna_Nova.jpg`), prezentujúci ostrovček s vertikálnym lamelovým obkladom a travertínovou doskou, zapustenú indukčnú dosku, nadväzujúce jedálenské sedenie, vysokú nábytkovú stenu s osvetlenou nikou a čisté okno do záhrady.
+   - Pôvodný stav („Pred“): Autentická fotografia stavebného stavu z priečinka (`photo_27_2026-08-27_14-06-47.jpg`).
+   - Stav po rekonštrukcii („Po“): Nový luxusný render kuchyne dodaný investorom (`05_Kuchyna_Nova.jpg`): kuchynský ostrov s vertikálnym lamelovým dekorom a travertínovou pracovnou doskou, zapustená varná doska, nadväzujúce jedálenské sedenie, podsvietená nika a čisté okno do záhrady.
 
-2. **Kompletné a prehľadné rozdelenie podlaží (1. NP a 2. NP)**:
-   - Prezentácia bola rozčlenená do troch jasných architektonických blokov:
-     - **Oddiel I: Exteriér a obvodový plášť** (Uličná fasáda, Vstup a závetrie, Dvorová fasáda bez pergoly)
-     - **Oddiel II: 1. Nadzemné podlažie &mdash; Denná zóna** (Obývacia izba s klenbou, Vstupná hala a jaseňové schodisko, Kuchyňa s ostrovčekom)
-     - **Oddiel III: 2. Nadzemné podlažie &mdash; Nočná zóna (Poschodie)**:
-       - **Pohľad 7: Hlavná spálňa na poschodí (2. NP)** &mdash; Pôvodný stav z fotografie č. 58 s trojdielnym oknom a priamym výhľadom ponad strechy okolitých domov a zeleň Koliby vs. luxusný stav s lamelovou stenou, LED podsvietením a novým radiátorom Korado.
-       - **Pohľad 8: Kúpeľňa na poschodí na kľúč (2. NP)** &mdash; Pôvodný stav z fotografie č. 56 (žlté vintage obklady, liatinový radiátor a umývadlo) vs. rektifikovaný veľkoformátový gres so 45° Jolly hranami, Geberit Duofix a akrylátová vaňa.
-       - **Pohľad 9: Pracovňa / Hosťovská izba s priznaným tehlovým komínom (2. NP)** &mdash; Pôvodný stav z fotografie č. 31 s jedinečným lícovým tehlovým pilierom a trojdielnym oknom.
-       - **Pohľad 10: Horná chodba a nová rozvodnica (2. NP)** &mdash; Pôvodný stav z fotografie č. 37 zachytávajúci starý poistkový rozvádzač, staré zárubne a hornú podestu schodiska.
+2. **Odstránenie zlatých rámčekov/štítkov v pravom hornom rohu kariet**:
+   - Všetky štítky (`view-tag`) v záhlaví jednotlivých porovnaní boli kompletne odstránené pre dosiahnutie maximálne čistého, luxusného a nerušeného vzhľadu bez nadbytočných informácií.
 
-3. **Miestnosti v čistom stavebnom vyhotovení (bez nábytku)**:
-   - Prehľadné zobrazenie čistých stavebných priestorov rozdelené na 1. NP (obývačka, hala, kuchyňa) a 2. NP (spálňa s výhľadom, kúpeľňa, chodba).
+3. **Štruktúra 8 hlavných pohľadov (Pred / Po)**:
+   - 1. Hlavná uličná fasáda a balkón
+   - 2. Vstupná zóna a vchodové dvere
+   - 3. Dvorová fasáda bez pergoly
+   - 4. Obývacia izba s klenbovým oblúkom
+   - 5. Vstupná hala a schodisko z masívneho jaseňa (3 000 €)
+   - 6. Kuchynský priestor a dizajnový ostrovček (s novým renderom)
+   - 7. Hlavná spálňa na poschodí
+   - 8. Kúpeľňa na kľúč s Jolly hranami (7 500 €)
 
-4. **Položkový investičný rozpočet (CP26082026)**:
+4. **Pododdiel čistých priestorov bez nábytku**:
+   - Obývacia izba, Hala a schodisko, Kuchyňa, Hlavná spálňa, Kúpeľňa na kľúč.
+
+5. **Položkový investičný rozpočet (CP26082026)**:
    - Základ bez DPH: **90 532,00 €**
    - DPH 23 %: **20 822,36 €**
    - **Celková investícia s DPH: 111 354,36 €**
