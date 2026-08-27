@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rekonštrukcia rodinného domu č. 40 · Modul Company s.r.o.</title>
+  <title>Rekonštrukcia rodinného domu č. 40 · Architektonický a stavebný projekt</title>
   <style>
     :root {
       --bg-primary: #f8f6f2;
@@ -140,12 +140,13 @@
     .nav-pill {
       color: var(--text-muted);
       text-decoration: none;
-      padding: 7px 16px;
-      font-size: 13.5px;
+      padding: 8px 18px;
+      font-size: 14px;
       border-radius: 20px;
       border: 1px solid var(--border);
       transition: all 0.2s;
       font-weight: 500;
+      background: #fff;
     }
 
     .nav-pill:hover, .nav-pill.active {
@@ -160,90 +161,42 @@
       padding: 0 20px;
     }
 
-    .cp-summary-card {
+    .section-header-banner {
       background: var(--bg-card);
       border-radius: var(--radius);
       padding: 32px 36px;
-      margin-bottom: 40px;
+      margin-bottom: 35px;
       box-shadow: var(--shadow-sm);
       border: 1px solid var(--border);
-    }
-
-    .cp-header {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
+      align-items: center;
       flex-wrap: wrap;
       gap: 20px;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 24px;
-      margin-bottom: 24px;
     }
 
-    .cp-company h3 {
-      font-size: 20px;
-      color: var(--dark);
-      margin-bottom: 4px;
-    }
-
-    .cp-company p {
-      font-size: 13.5px;
-      color: var(--text-muted);
-    }
-
-    .cp-price-box {
-      text-align: right;
-      background: var(--accent-light);
-      padding: 14px 22px;
-      border-radius: 10px;
-      border: 1px solid rgba(139, 110, 78, 0.2);
-    }
-
-    .cp-price-label {
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--accent-dark);
-      font-weight: 600;
-    }
-
-    .cp-price-val {
+    .section-header-banner h2 {
       font-size: 26px;
-      font-weight: 700;
       color: var(--dark);
+      font-weight: 600;
+      margin-bottom: 6px;
     }
 
-    .cp-price-sub {
-      font-size: 13px;
+    .section-header-banner p {
+      font-size: 15px;
       color: var(--text-muted);
+      max-width: 700px;
     }
 
-    .cp-highlights {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 16px;
-    }
-
-    .cp-item {
-      background: var(--bg-primary);
-      padding: 16px 18px;
-      border-radius: 10px;
-      border: 1px solid var(--border);
-    }
-
-    .cp-item strong {
-      display: block;
-      font-size: 12.5px;
-      color: var(--accent);
-      text-transform: uppercase;
+    .section-badge {
+      background: var(--accent-light);
+      color: var(--accent-dark);
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 13.5px;
       letter-spacing: 0.5px;
-      margin-bottom: 4px;
-    }
-
-    .cp-item span {
-      font-size: 14px;
-      color: var(--text-main);
-      font-weight: 500;
+      border: 1px solid rgba(139, 110, 78, 0.2);
     }
 
     .view-card {
@@ -398,6 +351,25 @@
       line-height: 1.65;
     }
 
+    .client-note-box {
+      background: #faf6f0;
+      border-left: 4px solid var(--accent);
+      padding: 16px 20px;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 24px;
+      font-size: 14.5px;
+      color: #4a443d;
+    }
+
+    .client-note-box strong {
+      color: var(--accent-dark);
+      display: block;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+    }
+
     .specs-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -438,7 +410,83 @@
       font-weight: 500;
     }
 
-    /* Budget Breakdown Table */
+    /* Cards for Unfurnished Rooms */
+    .unfurnished-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 24px;
+      margin-bottom: 45px;
+    }
+
+    .room-plan-card {
+      background: var(--bg-card);
+      border-radius: var(--radius);
+      padding: 26px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .room-plan-card h4 {
+      font-size: 18px;
+      color: var(--dark);
+      margin-bottom: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .room-dims {
+      font-size: 13px;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .room-status {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+
+    .room-features {
+      list-style: none;
+      margin-bottom: 16px;
+    }
+
+    .room-features li {
+      font-size: 13.5px;
+      color: #444;
+      padding: 5px 0;
+      border-bottom: 1px solid #f2ede7;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .room-features li::before {
+      content: "✓";
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    .room-ideas {
+      background: var(--bg-primary);
+      padding: 14px 16px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      font-size: 13px;
+      color: #555;
+    }
+
+    .room-ideas strong {
+      color: var(--accent-dark);
+      display: block;
+      margin-bottom: 4px;
+      font-size: 11.5px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Scope of Works Table (No Prices) */
     .table-card {
       background: var(--bg-card);
       border-radius: var(--radius);
@@ -492,12 +540,7 @@
       text-align: right;
       font-family: monospace;
       font-size: 14px;
-    }
-
-    .table-total {
-      background: var(--accent-light);
-      font-weight: 700;
-      font-size: 15px;
+      font-weight: 600;
     }
 
     footer {
@@ -529,7 +572,7 @@
         page-break-inside: avoid;
         margin-bottom: 25px;
       }
-      .cp-summary-card, .table-card {
+      .section-header-banner, .table-card {
         box-shadow: none;
         border: 1px solid #ccc;
         page-break-inside: avoid;
@@ -546,85 +589,142 @@
       .view-content {
         padding: 20px;
       }
-      .cp-header {
-        flex-direction: column;
-      }
-      .cp-price-box {
-        text-align: left;
-        width: 100%;
-      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="header-badge">Modul Company s.r.o. &middot; Cenová ponuka CP26082026</div>
+    <div class="header-badge">Architektonický a stavebný projekt &middot; Rodinný dom č. 40</div>
     <h1>Rekonštrukcia rodinného domu: <strong>Svieži &amp; Realistický koncept</strong></h1>
-    <p>Praktický architektonický návrh a rekonštrukcia domu č. 40 s využitím dostupných materiálov zo slovenských stavebnín (SIKO, Hornbach, OBI), napojený na presnú cenovú ponuku stavebných prác.</p>
+    <p>Komplexná architektonická prezentácia premeny domu s dôrazom na čisté stavebné vyhotovenie, hladené sádrové omietky, kvalitné podlahy zo slovenských stavebnín (SIKO, Hornbach, OBI) a priestor pre vašu vlastnú fantáziu zariadenia.</p>
     <div class="action-bar">
       <button class="btn" onclick="window.print()">🖨️ Vytlačiť / Exportovať do PDF</button>
-      <a class="btn btn-secondary" href="#rozpocet">📊 Zobraziť položkový rozpočet CP</a>
+      <a class="btn btn-secondary" href="#bez-nabytku">🛋️ Zobraziť priestory bez nábytku</a>
+      <a class="btn btn-secondary" href="#rozsah-prac">📋 Zoznam stavebných prác a štandardov</a>
     </div>
   </header>
 
   <div class="nav-container">
     <div class="nav-pills">
+      <a href="#bez-nabytku" class="nav-pill" style="font-weight: 600; color: var(--accent-dark); background: var(--accent-light);">✨ Priestory bez nábytku</a>
       <a href="#fasada" class="nav-pill">1. Hlavná fasáda</a>
       <a href="#vstup" class="nav-pill">2. Vchod & dvere</a>
       <a href="#dvor" class="nav-pill">3. Dvorová fasáda (bez pergoly)</a>
-      <a href="#obyvacka" class="nav-pill">4. Obývačka (rybina)</a>
+      <a href="#obyvacka" class="nav-pill">4. Obývačka s klenbou</a>
       <a href="#hala" class="nav-pill">5. Schodisko jaseň masív</a>
-      <a href="#kuchyna" class="nav-pill">6. Kuchyňa Decodom/OBI</a>
+      <a href="#kuchyna" class="nav-pill">6. Kuchyňa a jedáleň</a>
       <a href="#spalna" class="nav-pill">7. Spálňa</a>
-      <a href="#kupelna" class="nav-pill">8. Kúpeľňa SIKO na kľúč</a>
-      <a href="#rozpocet" class="nav-pill">Položkový rozpočet</a>
+      <a href="#kupelna" class="nav-pill">8. Kúpeľňa SIKO</a>
+      <a href="#rozsah-prac" class="nav-pill">Technický rozsah prác</a>
     </div>
   </div>
 
   <div class="container">
 
-    <!-- Cenová ponuka Summary Card -->
-    <div class="cp-summary-card">
-      <div class="cp-header">
-        <div class="cp-company">
-          <h3>Modul Company s.r.o.</h3>
-          <p>Karpatské námestie 7770/10A, 831 06 Bratislava - mestská časť Rača</p>
-          <p>IČO: 56275421 &middot; DIČ: 2122258446 &middot; IČ DPH: SK2122258446</p>
-        </div>
-        <div class="cp-price-box">
-          <div class="cp-price-label">Celková cena rekonštrukcie</div>
-          <div class="cp-price-val">111 354,36 €</div>
-          <div class="cp-price-sub">90 532,00 € bez DPH (+23% DPH)</div>
+    <!-- SEKCE: PRIESTORY BEZ NÁBYTKU -->
+    <div id="bez-nabytku" class="section-header-banner">
+      <div>
+        <h2>✨ Čistý stavebný základ pre vašu vlastnú predstavu</h2>
+        <p>Všetky priestory sú dokončené do finálneho stavebného štandardu: hladké biele a kašmírové sádrové stierky, nová kompozitná podlaha vzor rybina, zapustené LED osvetlenie v strope, nové radiátory a dokončená fasáda. Bez nábytku vidíte čisté svetlo, proporcie a môžete si priestor zariadiť presne podľa svojich snov.</p>
+      </div>
+      <div class="section-badge">Holopriestor pripravený na nasťahovanie</div>
+    </div>
+
+    <!-- Prehľad dispozícií pre klientku -->
+    <div class="unfurnished-grid">
+      
+      <div class="room-plan-card">
+        <h4>Obývacia izba s klenbou <span class="room-dims">4,26 &times; 3,41 m</span></h4>
+        <div class="room-status">Finálny stavebný stav bez nábytku</div>
+        <ul class="room-features">
+          <li>Nový kompozitný vinyl so vzorom rybina (dub prírodný)</li>
+          <li>Sádrová omietka Rimano Glet XL vyhladená do stratena</li>
+          <li>Precízne zrekonštruovaný klenbový oblúk do nadväzujúcej izby</li>
+          <li>Nový biely plochý radiátor Korado Radik pod oknom</li>
+          <li>Závesný SDK strop so zapustenými LED bodovkami</li>
+        </ul>
+        <div class="room-ideas">
+          <strong>💡 Inšpirácia pre zariadenie:</strong>
+          Priestor je ideálny pre priestrannú rohovú sedačku svetlej farby, konferenčný stolík a TV stenu. Za klenbovým oblúkom vzniká prirodzený kútik pre knižnicu, čitáreň alebo jedálenské sedenie.
         </div>
       </div>
 
-      <div class="cp-highlights">
-        <div class="cp-item">
-          <strong>Steny a omietky</strong>
-          <span>740 m² sádrová omietka + sieťkovanie, 960 m² akrylátová maľba</span>
-        </div>
-        <div class="cp-item">
-          <strong>Stropy</strong>
-          <span>228 m² závesný SDK podhľad s oceľovou konštrukciou Q2</span>
-        </div>
-        <div class="cp-item">
-          <strong>Podlahy</strong>
-          <span>215 m² kompozitný vinyl klik (vzor rybina v obývačke)</span>
-        </div>
-        <div class="cp-item">
-          <strong>Kúpeľňa na kľúč</strong>
-          <span>SIKO obklady, Geberit Duofix, sanita, Jolly hrany (7 500 €)</span>
-        </div>
-        <div class="cp-item">
-          <strong>Schodisko</strong>
-          <span>Nové jaseňové masívne stupne a montáž (3 000 €)</span>
-        </div>
-        <div class="cp-item">
-          <strong>Elektroinštalácia</strong>
-          <span>Kompletná výmena 230 m² + vonkajšie pripojenie (16 100 €)</span>
+      <div class="room-plan-card">
+        <h4>Vstupná hala a schodisko <span class="room-dims">2,74 &times; 3,06 m</span></h4>
+        <div class="room-status">Finálny stavebný stav bez nábytku</div>
+        <ul class="room-features">
+          <li>Masívne schodiskové stupne z tvrdého slovenského jaseňa</li>
+          <li>Nová rovná murovaná priečka z tvárnic Ytong 150 mm</li>
+          <li>Vinylová a gresová podlahová zóna pre jednoduché čistenie</li>
+          <li>Nové interiérové dvere s obložkovými zárubňami</li>
+          <li>Výborné denné presvetlenie</li>
+        </ul>
+        <div class="room-ideas">
+          <strong>💡 Inšpirácia pre zariadenie:</strong>
+          Pri stene z Ytongu je ideálne miesto pre vstavanú šatníkovú skriňu na kabáty a obuv siahajúcu až po strop so zrkadlovými dverami.
         </div>
       </div>
+
+      <div class="room-plan-card">
+        <h4>Kuchynský priestor <span class="room-dims">2,32 &times; 3,42 m</span></h4>
+        <div class="room-status">Pripravené inštalácie a povrchy</div>
+        <ul class="room-features">
+          <li>Kompletné nové rozvody vody, odpadov a elektriny pre spotrebiče</li>
+          <li>Keramický gresový obklad steny výšky 60 cm (fartuk za linkou)</li>
+          <li>Rovná vinylová podlaha s vysokou odolnosťou voči vode</li>
+          <li>Nové plastové okno s výhľadom do dvora</li>
+        </ul>
+        <div class="room-ideas">
+          <strong>💡 Inšpirácia pre zariadenie:</strong>
+          Možnosť zvoliť kuchynskú linku v tvare L alebo rovnú líniu (Decodom / IKEA / OBI). Pod oknom krásne vynikne jedálenský stôl so stoličkami.
+        </div>
+      </div>
+
+      <div class="room-plan-card">
+        <h4>Hlavná spálňa na poschodí <span class="room-dims">3,10 &times; 4,26 m</span></h4>
+        <div class="room-status">Finálny stavebný stav bez nábytku</div>
+        <ul class="room-features">
+          <li>Teplá a tichá vinylová podlaha príjemná pre chôdzu naboso</li>
+          <li>Čerstvo natreté steny v upokojujúcom svetlom tóne</li>
+          <li>Nový radiátor s termostatickou hlavicou</li>
+          <li>Veľké okno zabezpečujúce dostatok denného svetla</li>
+        </ul>
+        <div class="room-ideas">
+          <strong>💡 Inšpirácia pre zariadenie:</strong>
+          Krásny priestor pre manželskú posteľ (160 alebo 180 cm). Na stenu za čelo postele môžete umiestniť akustické drevené lamely z OBI a po celej šírke steny šatník.
+        </div>
+      </div>
+
+      <div class="room-plan-card">
+        <h4>Detská izba / Pracovňa <span class="room-dims">3,03 &times; 3,13 m</span></h4>
+        <div class="room-status">Finálny stavebný stav bez nábytku</div>
+        <ul class="room-features">
+          <li>Vyrovnaný podklad doskami Rigidur E25 a nová podlaha</li>
+          <li>Hladké sádrové stierky odolné voči oderu</li>
+          <li>Dostatok elektrických zásuviek pre pracovný stôl a PC</li>
+        </ul>
+        <div class="room-ideas">
+          <strong>💡 Inšpirácia pre zariadenie:</strong>
+          Univerzálna izba, ktorú môžete zariadiť ako útulnú detskú izbu s poschodovou či samostatnou posteľou, alebo ako tichú domácu pracovňu.
+        </div>
+      </div>
+
+      <div class="room-plan-card">
+        <h4>Kúpeľňa na kľúč (SIKO) <span class="room-dims">1,64 &times; 2,26 m</span></h4>
+        <div class="room-status">Kompletné obklady, dlažba a sanita</div>
+        <ul class="room-features">
+          <li>Gresový obklad do výšky 2,1 m s precíznymi Jolly hranami 45°</li>
+          <li>Zabudovaný podomietkový modul Geberit Duofix</li>
+          <li>Akrylátová vaňa so sklenenou zástienkou na sprchovanie</li>
+          <li>Závesná skrinka s umývadlom a zrkadlom</li>
+        </ul>
+        <div class="room-ideas">
+          <strong>💡 Inšpirácia pre zariadenie:</strong>
+          Kúpeľňa je plne funkčná od prvého dňa. Stačí doplniť mäkké uteráky v zemitých farbách, dávkovače mydla a zelenú rastlinu milujúcu vlhkosť.
+        </div>
+      </div>
+
     </div>
 
     <!-- 1. Hlavná fasáda -->
@@ -643,7 +743,11 @@
         <div class="label-badge label-before">PRED REKONŠTRUKCIOU</div>
       </div>
       <div class="view-content">
-        <p class="view-desc">Čistá a realistická renovácia fasády domu č. 40 podľa stavebnej praxe. Pôvodná sivá brizolitová omietka bola nahradená zatepľovacím systémom so silikónovou omietkou Baumit v príjemnom jemnom pieskovom odtieni greige. Balkón má nové bezpečné antracitové lamelové zábradlie a okapový chodník zo štrku chráni sokel pred zrážkami.</p>
+        <p class="view-desc">Čistá a realistická renovácia fasády domu č. 40 podľa osvedčenej stavebnej praxe. Pôvodná sivá brizolitová omietka bola nahradená zatepľovacím systémom so silikónovou omietkou Baumit v príjemnom jemnom pieskovom odtieni greige. Balkón má nové bezpečné antracitové lamelové zábradlie a okapový chodník zo štrku chráni sokel pred zrážkami.</p>
+        <div class="client-note-box">
+          <strong>✨ Pohľad bez nábytku:</strong>
+          Čistá architektúra domu s obnovenou geometriou, novými oknami v antracite a upraveným trávnikom pripraveným na bežný život.
+        </div>
         <div class="specs-grid">
           <div class="spec-item">
             <strong>Fasádny systém</strong>
@@ -673,7 +777,7 @@
     <div id="vstup" class="view-card">
       <div class="view-header">
         <h3>2. Vstupná zóna a vchodové dvere</h3>
-        <span class="view-tag">Exteriér &middot; Položka CP: Vstupné dvere</span>
+        <span class="view-tag">Exteriér &middot; Bezpečnostné dvere</span>
       </div>
       <div class="compare-container" data-container>
         <img class="compare-img before" src="pred_rekonstrukciou/02_pred_vstup_kryt.jpg" alt="Pred rekonštrukciou">
@@ -685,12 +789,12 @@
         <div class="label-badge label-before">PRED REKONŠTRUKCIOU</div>
       </div>
       <div class="view-content">
-        <p class="view-desc">Vstupný trakt bol zrenovovaný v súlade s rozpočtovou položkou «Montáž vstupných dverí». Nové tepelnoizolačné dvere s nerezovým madlom dopĺňa odolný sklenený prístrešok s hliníkovou konštrukciou z Hornbachu a nášľapné schodíky obložené mrazuvzdorným gresom.</p>
+        <p class="view-desc">Vstupný trakt zrenovovaný pre maximálnu bezpečnosť a tepelný komfort. Nové zateplené dvere s nerezovým madlom dopĺňa odolný sklenený prístrešok s hliníkovou konštrukciou z Hornbachu a nášľapné schodíky obložené mrazuvzdorným gresom.</p>
         <div class="specs-grid">
           <div class="spec-item">
             <strong>Vstupné bezpečnostné dvere</strong>
-            <span>Oceľovo-hliníkové dvere s PUR penou, 5-bodový zámok, antracit</span>
-            <div class="spec-source">Položka CP č. 100 &middot; Hornbach / Hörmann</div>
+            <span>Oceľovo-hliníkové dvere s PUR penou, viacbodový zámok, antracit</span>
+            <div class="spec-source">Hornbach / Hörmann</div>
           </div>
           <div class="spec-item">
             <strong>Vchodová strieška</strong>
@@ -705,7 +809,7 @@
           <div class="spec-item">
             <strong>Osvetlenie vstupu</strong>
             <span>Fasádne svietidlo s pohybovým senzorom a LED žiarovkou 3000K</span>
-            <div class="spec-source">Elektroinštalácia CP</div>
+            <div class="spec-source">Kompletná nová elektroinštalácia</div>
           </div>
         </div>
       </div>
@@ -727,7 +831,11 @@
         <div class="label-badge label-before">PRED REKONŠTRUKCIOU</div>
       </div>
       <div class="view-content">
-        <p class="view-desc">Podľa vašej požiadavky: <em>«фасад будем делать, заградку с навесом нет»</em>. Zamerané na čisté stavebné dokončenie fasády bez drahých terasových konštrukcií. Zateplená omietka greige, nové dažďové zvody, štrkový drenážny pás a bežný trávnik vytvárajú usporiadaný, praktický dvor.</p>
+        <p class="view-desc">Čisté stavebné dokončenie fasády bez drahých terasových konštrukcií a prístreškov. Zateplená omietka greige, nové dažďové zvody, štrkový drenážny pás a bežný trávnik vytvárajú usporiadaný, praktický dvor s priestorom pre vaše vlastné budúce nápady.</p>
+        <div class="client-note-box">
+          <strong>✨ Pohľad bez nábytku a terasy:</strong>
+          Kompletne dokončený plášť budovy s ochranou proti vode. Voľný pozemok, na ktorom môžete neskôr podľa vlastného uváženia umiestniť sedenie, gril či detské ihrisko.
+        </div>
         <div class="specs-grid">
           <div class="spec-item">
             <strong>Dvorová omietka</strong>
@@ -757,7 +865,7 @@
     <div id="obyvacka" class="view-card">
       <div class="view-header">
         <h3>4. Obývacia izba s klenbovým oblúkom</h3>
-        <span class="view-tag">Interiér &middot; Položka CP: Vinyl vzor rybina</span>
+        <span class="view-tag">Interiér &middot; Vinyl vzor rybina</span>
       </div>
       <div class="compare-container" data-container>
         <img class="compare-img before" src="pred_rekonstrukciou/04_pred_obyvacia_izba.jpg" alt="Pred rekonštrukciou">
@@ -769,27 +877,31 @@
         <div class="label-badge label-before">PRED REKONŠTRUKCIOU</div>
       </div>
       <div class="view-content">
-        <p class="view-desc">Centrálna obývacia izba s pôvodným charakteristickým oblúkom. Staré poškodené parkety a prepadnutý podklad boli nahradené suchou podlahou Liapor + Rigidur E25 a novou kompozitnou vinylovou podlahou ukladanou do vzoru rybina (herringbone) podľa položky v CP. Pod oknom je osadený nový radiátor Korado a v strope zapustené LED bodovky.</p>
+        <p class="view-desc">Centrálna obývacia izba s pôvodným charakteristickým oblúkom. Staré poškodené parkety a prepadnutý podklad boli nahradené suchou podlahou Liapor + Rigidur E25 a novou kompozitnou vinylovou podlahou ukladanou do vzoru rybina (herringbone). Pod oknom je osadený nový radiátor Korado a v strope zapustené LED bodovky.</p>
+        <div class="client-note-box">
+          <strong>✨ Ako si môžete priestor predstaviť:</strong>
+          Všimnite si obrovskú voľnú podlahovú plochu pred oblúkom a presvetlenie cez balkónové dvere. Nábytok na vizualizácii slúži len ako mierka — miestnosť je pripravená na akékoľvek vaše usporiadanie sedačky, stolov a dekorácií.
+        </div>
         <div class="specs-grid">
           <div class="spec-item">
             <strong>Vinylová podlaha vzor rybina</strong>
             <span>Rigidný kompozitný vinyl so zámkom (dub prírodný, vzor rybina)</span>
-            <div class="spec-source">Položka CP č. 82 &middot; SIKO / Hornbach</div>
+            <div class="spec-source">SIKO / Hornbach</div>
           </div>
           <div class="spec-item">
             <strong>Sádrové stierky a oblúk</strong>
-            <span>Zahladené steny sádrovou stierkou do 2 cm, rovné línie</span>
-            <div class="spec-source">Položka CP č. 56 &middot; Rimano Glet XL</div>
+            <span>Zahladené steny sádrovou stierkou do 2 cm, rovné čisté línie</span>
+            <div class="spec-source">Rimano Glet XL</div>
           </div>
           <div class="spec-item">
             <strong>Radiátory</strong>
             <span>Nové panelové radiátory Korado Radik Klasik s termostatickou hlavicou</span>
-            <div class="spec-source">Položka CP č. 94 (16 ks)</div>
+            <div class="spec-source">Korado Česká republika</div>
           </div>
           <div class="spec-item">
             <strong>Sadrokartónový strop</strong>
             <span>Biela závesná konštrukcia SDK s bodovými LED svietidlami</span>
-            <div class="spec-source">Položka CP č. 35 (228 m²)</div>
+            <div class="spec-source">Konštrukcia Rigips CD Q2</div>
           </div>
         </div>
       </div>
@@ -799,7 +911,7 @@
     <div id="hala" class="view-card">
       <div class="view-header">
         <h3>5. Vstupná hala a jaseňové schodisko</h3>
-        <span class="view-tag">Interiér &middot; Položka CP: Schodisko jaseň (3 000 €)</span>
+        <span class="view-tag">Interiér &middot; Schodisko jaseň masív</span>
       </div>
       <div class="compare-container" data-container>
         <img class="compare-img before" src="pred_rekonstrukciou/06_pred_hala_schodisko.jpg" alt="Pred rekonštrukciou">
@@ -811,17 +923,17 @@
         <div class="label-badge label-before">PRED REKONŠTRUKCIOU</div>
       </div>
       <div class="view-content">
-        <p class="view-desc">V rozpočte CP je jasne definovaná položka: <strong>«Schodisko jaseň cca s materiálom: 3 000,00 €»</strong>. Pôvodné staré drevené schodisko sa kompletne demontuje a nahradí krásnymi masívnymi stupňami z jaseňa s tvrdým lakom. Nová priečka z tvárnic Ytong 150 a moderné presklenie prinesú do chodby dostatok svetla.</p>
+        <p class="view-desc">Pôvodné staré vŕzgajúce schodisko bolo kompletne demontované a nahradené krásnymi masívnymi stupňami z tvrdého jaseňa s matným ochranným lakom. Nová priečka z tvárnic Ytong 150 mm a moderné presklenie prinesú do chodby dostatok prirodzeného svetla.</p>
         <div class="specs-grid">
           <div class="spec-item">
             <strong>Masívne jaseňové stupne</strong>
             <span>Stupnice z tvrdého jaseňového dreva ošetrené matným PU lakom</span>
-            <div class="spec-source">Položka CP č. 100 &middot; 3 000 €</div>
+            <div class="spec-source">Slovenský masívny jaseň</div>
           </div>
           <div class="spec-item">
             <strong>Murovaná priečka</strong>
-            <span>Priečka z tvárnic Ytong hr. 150 mm s presnými rozmermi</span>
-            <div class="spec-source">Položka JSON: Priečka YTONG 150</div>
+            <span>Priečka z tvárnic Ytong hr. 150 mm s armovaním</span>
+            <div class="spec-source">Presné tvárnice Ytong</div>
           </div>
           <div class="spec-item">
             <strong>Dlažba a vinyl</strong>
@@ -830,8 +942,8 @@
           </div>
           <div class="spec-item">
             <strong>Interiérové dvere</strong>
-            <span>Plné dvere s obložkovou zárubňou v dekore dub/biela (19 ks v dome)</span>
-            <div class="spec-source">Položka CP č. 89 &middot; Porta / ERKADO</div>
+            <span>Plné dvere s obložkovou zárubňou v dekore dub/biela</span>
+            <div class="spec-source">Porta / ERKADO zo SIKO</div>
           </div>
         </div>
       </div>
@@ -840,8 +952,8 @@
     <!-- 6. Kuchyňa -->
     <div id="kuchyna" class="view-card">
       <div class="view-header">
-        <h3>6. Kuchyňa s jedálenským stolom</h3>
-        <span class="view-tag">Interiér &middot; Položka CP: Obklad steny 0.6 m</span>
+        <h3>6. Kuchyňa a jedálenské sedenie</h3>
+        <span class="view-tag">Interiér &middot; Zástena 0,6 m SIKO</span>
       </div>
       <div class="compare-container" data-container>
         <img class="compare-img before" src="pred_rekonstrukciou/05_pred_kuchyna.jpg" alt="Pred rekonštrukciou">
@@ -853,21 +965,21 @@
         <div class="label-badge label-before">PRED REKONŠTRUKCIOU</div>
       </div>
       <div class="view-content">
-        <p class="view-desc">Kuchyňa pripravená podľa položiek v CP: vyčistenie podkladu, vyrovnanie podlahy, inštalácia 16 prípojných bodov vody a odpadu a obklad steny za linkou vo výške 60 cm (fartuk). Kuchynská zostava v kombinácii bieleho laku a duba (Decodom / IKEA / OBI) s jedálenským stolom vytvára útulné rodinné prostredie.</p>
+        <p class="view-desc">Kuchyňa pripravená na montáž akejkoľvek linky podľa výberu klientky: vyčistený a vyrovnaný podklad, inštalované nové prípojné body vody a odpadu a hotový keramický obklad steny vo výške 60 cm (fartuk).</p>
         <div class="specs-grid">
           <div class="spec-item">
             <strong>Obklad za kuchynskou linkou</strong>
-            <span>Gresový obklad výšky 60 cm podľa rozpočtu (ľahko umývateľný)</span>
-            <div class="spec-source">Položka JSON: Obklad v=0.6m &middot; SIKO</div>
+            <span>Gresový obklad výšky 60 cm (ľahko umývateľný od mastnoty)</span>
+            <div class="spec-source">SIKO Kúpeľne</div>
           </div>
           <div class="spec-item">
             <strong>Prípojné body vody a odpadu</strong>
             <span>Nové rozvody pre drez, umývačku riadu a batériu</span>
-            <div class="spec-source">Položka CP č. 53 (16 ks v dome)</div>
+            <div class="spec-source">Kompletná zdravotechnika</div>
           </div>
           <div class="spec-item">
             <strong>Kuchynská linka</strong>
-            <span>Modulárna kuchyňa s tichým dovieraním zásuviek, doska 38 mm</span>
+            <span>Príklad modulárnej kuchyne (biela / dub) s jedálenským stolom</span>
             <div class="spec-source">Decodom / OBI / IKEA</div>
           </div>
           <div class="spec-item">
@@ -910,7 +1022,7 @@
           <div class="spec-item">
             <strong>Vykurovanie</strong>
             <span>Kompaktný radiátor s termostatom pre ideálnu nočnú teplotu 19°C</span>
-            <div class="spec-source">Položka CP č. 94</div>
+            <div class="spec-source">Korado Radik</div>
           </div>
           <div class="spec-item">
             <strong>Vstavaná skriňa</strong>
@@ -925,7 +1037,7 @@
     <div id="kupelna" class="view-card">
       <div class="view-header">
         <h3>8. Kúpeľňa na kľúč (SIKO kúpeľňa)</h3>
-        <span class="view-tag">Sanita &middot; Položka CP: Kúpeľňa na kľúč (7 500 €)</span>
+        <span class="view-tag">Sanita &middot; Kúpeľňa na kľúč</span>
       </div>
       <div class="compare-container" data-container>
         <img class="compare-img before" src="pred_rekonstrukciou/08_pred_kupelna.jpg" alt="Pred rekonštrukciou">
@@ -937,17 +1049,17 @@
         <div class="label-badge label-before">PRED REKONŠTRUKCIOU</div>
       </div>
       <div class="view-content">
-        <p class="view-desc">Kompletná realizácia podľa rozpočtu: <strong>«Celkom Kúpeľňa na kľúč + stavebný materiál, Jolly hrany, pripojenie sanity a nábytku: 7 500,00 €»</strong>. Obklad do výšky 2,1 m (podľa JSON zadania), kamenárske Jolly hrany pod uhlom 45°, závesné WC Geberit Duofix so zabudovanou nádržkou, moderná vaňa s vaňovou zástenou a závesná skrinka s umývadlom zo SIKO.</p>
+        <p class="view-desc">Kompletná realizácia kúpeľne na kľúč: obklad do výšky 2,1 m, kamenárske Jolly hrany pod uhlom 45°, závesné WC Geberit Duofix so zabudovanou nádržkou, moderná vaňa s vaňovou zástenou a závesná skrinka s umývadlom zo SIKO.</p>
         <div class="specs-grid">
           <div class="spec-item">
             <strong>Obklad a Jolly hrany</strong>
             <span>Gres 60x60/60x120 cm do výšky 2,1 m so zabrúsenými 45° Jolly hranami</span>
-            <div class="spec-source">Položka CP &middot; SIKO Kúpeľne</div>
+            <div class="spec-source">SIKO Kúpeľne</div>
           </div>
           <div class="spec-item">
             <strong>Podomietkový Geberit</strong>
             <span>Geberit Duofix s podomietkovou nádržkou Delta a tlačidlom</span>
-            <div class="spec-source">Položka CP č. 40</div>
+            <div class="spec-source">Originál Geberit Švajčiarsko</div>
           </div>
           <div class="spec-item">
             <strong>Kúpeľňová vaňa</strong>
@@ -963,20 +1075,20 @@
       </div>
     </div>
 
-    <!-- Položkový rozpočet Table -->
-    <div id="rozpocet" class="table-card">
-      <h3>Položkový rozpočet rekonštrukcie stavby (CP26082026)</h3>
-      <p>Vypracoval dodávateľ: <strong>Modul Company s.r.o.</strong>, Karpatské námestie 7770/10A, 831 06 Bratislava - Rača</p>
+    <!-- TECHNICKÝ ROZSAH PRÁC (BEZ CIEN) -->
+    <div id="rozsah-prac" class="table-card">
+      <h3>Technický rozsah a zoznam realizovaných stavebných prác</h3>
+      <p>Kompletný prehľad odborných prác a materiálových štandardov pre realizáciu objektu č. 40.</p>
       
       <div style="overflow-x: auto;">
         <table>
           <thead>
             <tr>
-              <th>Oddiel / Popis položky</th>
-              <th>Množstvo</th>
+              <th>Oddiel prác</th>
+              <th>Popis stavebných a montážnych prác</th>
+              <th style="text-align: right;">Výmera / Množstvo</th>
               <th>MJ</th>
-              <th style="text-align: right;">Cena / MJ</th>
-              <th style="text-align: right;">Cena celkom</th>
+              <th>Technický štandard a materiálová špecifikácia</th>
             </tr>
           </thead>
           <tbody>
@@ -984,187 +1096,160 @@
               <td colspan="5">BÚRACIE A DEMONTÁŽNE PRÁCE</td>
             </tr>
             <tr>
-              <td>Búranie dlažieb/obkladov a lepidla</td>
-              <td>50,00</td>
+              <td>Búranie dlažieb a obkladov</td>
+              <td>Odstránenie starých kachličiek a lepidla</td>
+              <td class="td-num">50,00</td>
               <td>m²</td>
-              <td class="td-num">10,00 €</td>
-              <td class="td-num">500,00 €</td>
+              <td>Vyčistenie podkladu až na nosné murivo</td>
             </tr>
             <tr>
-              <td>Odstránenie starých omietok</td>
-              <td>740,00</td>
+              <td>Odstránenie omietok</td>
+              <td>Osekanie poškodených a zvetraných vnútorných omietok</td>
+              <td class="td-num">740,00</td>
               <td>m²</td>
-              <td class="td-num">6,00 €</td>
-              <td class="td-num">4 440,00 €</td>
+              <td>Kompletná sanácia stien</td>
             </tr>
             <tr>
-              <td>Demontáž drevených/laminátových parkiet</td>
-              <td>58,00</td>
+              <td>Demontáž podláh</td>
+              <td>Vytrhanie starých parkiet a lepeného linolea</td>
+              <td class="td-num">193,00</td>
               <td>m²</td>
-              <td class="td-num">5,00 €</td>
-              <td class="td-num">290,00 €</td>
+              <td>Odstránenie starých vrstiev po nosnú dosku</td>
             </tr>
             <tr>
-              <td>Odstránenie lepeného linolea</td>
-              <td>135,00</td>
-              <td>m²</td>
-              <td class="td-num">8,40 €</td>
-              <td class="td-num">1 134,00 €</td>
-            </tr>
-            <tr>
-              <td>Vybúranie kovových zárubní a dverných krídiel</td>
-              <td>21,00</td>
+              <td>Demontáž zárubní</td>
+              <td>Vybúranie starých kovových dverových zárubní</td>
+              <td class="td-num">21,00</td>
               <td>ks</td>
-              <td class="td-num">55,00 €</td>
-              <td class="td-num">1 155,00 €</td>
+              <td>Začistenie dverných otvorov pre obložky</td>
             </tr>
             <tr>
-              <td>Prenájom kontajnera 8 m³ + likvidácia odpadu</td>
-              <td>1,00</td>
-              <td>ks</td>
-              <td class="td-num">700,00 €</td>
-              <td class="td-num">700,00 €</td>
-            </tr>
-            <tr>
-              <td>Skládka odpadu do dodávky/kontajnera (100 vriec)</td>
-              <td>100,00</td>
-              <td>ks</td>
-              <td class="td-num">6,00 €</td>
-              <td class="td-num">600,00 €</td>
-            </tr>
-
-            <tr style="background: #f1ede6; font-weight: 600;">
-              <td colspan="5">MURÁRSKE, SADROKARTÓNOVÉ A POVRCHOVÉ PRÁCE</td>
-            </tr>
-            <tr>
-              <td>Podhľad SDK biely 12,5 mm závesný (oceľová konštrukcia CD Q2)</td>
-              <td>228,00</td>
-              <td>m²</td>
-              <td class="td-num">40,00 €</td>
-              <td class="td-num">9 120,00 €</td>
-            </tr>
-            <tr>
-              <td>Sádrová omietka + sieťkovanie do 2 cm (finálny povrch)</td>
-              <td>740,00</td>
-              <td>m²</td>
-              <td class="td-num">23,00 €</td>
-              <td class="td-num">17 020,00 €</td>
-            </tr>
-            <tr>
-              <td>Penetrácia vnútorného podkladu stien Weber</td>
-              <td>960,00</td>
-              <td>m²</td>
-              <td class="td-num">1,50 €</td>
-              <td class="td-num">1 440,00 €</td>
-            </tr>
-            <tr>
-              <td>Maľby akrylátové dvojnásobné (2-3 vrstvy) + ochrana</td>
-              <td>960,00</td>
-              <td>m²</td>
-              <td class="td-num">6,50 €</td>
-              <td class="td-num">6 240,00 €</td>
-            </tr>
-
-            <tr style="background: #f1ede6; font-weight: 600;">
-              <td colspan="5">INŠTALÁCIE (ELEKTRO &amp; VODA)</td>
-            </tr>
-            <tr>
-              <td>Elektroinštalácia: demontáž + nová montáž + hrubý materiál + pripojenie exteriér</td>
-              <td>230,00</td>
-              <td>m²</td>
-              <td class="td-num">70,00 €</td>
-              <td class="td-num">16 100,00 €</td>
-            </tr>
-            <tr>
-              <td>Prípojné body vody a kanalizácie + materiál</td>
-              <td>16,00</td>
-              <td>ks</td>
-              <td class="td-num">95,00 €</td>
-              <td class="td-num">1 520,00 €</td>
-            </tr>
-
-            <tr style="background: #f1ede6; font-weight: 600;">
-              <td colspan="5">PODLAHY, DVERE, RADIÁTORY A SCHODISKO</td>
-            </tr>
-            <tr>
-              <td>Vyrovnávací podsyp Liapor 1-4 mm (keramzit)</td>
-              <td>113,00</td>
-              <td>m²</td>
-              <td class="td-num">16,00 €</td>
-              <td class="td-num">1 808,00 €</td>
-            </tr>
-            <tr>
-              <td>Montáž podlahovej dosky RIGIDUR E25</td>
-              <td>113,00</td>
-              <td>m²</td>
-              <td class="td-num">50,00 €</td>
-              <td class="td-num">5 650,00 €</td>
-            </tr>
-            <tr>
-              <td>Cementová samonivelizačná stierka 20 mm</td>
-              <td>115,00</td>
-              <td>m²</td>
-              <td class="td-num">40,00 €</td>
-              <td class="td-num">4 600,00 €</td>
-            </tr>
-            <tr>
-              <td>Montáž vinylovej/kompozitnej podlahy klik systém (vrátane rybiny)</td>
-              <td>215,00</td>
-              <td>m²</td>
-              <td class="td-num">15,00 €</td>
-              <td class="td-num">3 225,00 €</td>
-            </tr>
-            <tr>
-              <td>Montáž interiérových zárubní a dverí</td>
-              <td>19,00</td>
-              <td>ks</td>
-              <td class="td-num">70,00 €</td>
-              <td class="td-num">1 330,00 €</td>
-            </tr>
-            <tr>
-              <td>Demontáž + montáž radiátorov Korado</td>
-              <td>16,00</td>
-              <td>ks</td>
-              <td class="td-num">150,00 €</td>
-              <td class="td-num">2 400,00 €</td>
-            </tr>
-            <tr>
-              <td>Montáž vstupných bezpečnostných dverí</td>
-              <td>2,00</td>
-              <td>ks</td>
-              <td class="td-num">200,00 €</td>
-              <td class="td-num">400,00 €</td>
-            </tr>
-            <tr>
-              <td><strong>Schodisko jaseň masív vrátane materiálu</strong></td>
-              <td>1,00</td>
+              <td>Likvidácia odpadu</td>
+              <td>Veľkoobjemový kontajner 8 m³ + odvoz sute</td>
+              <td class="td-num">1,00</td>
               <td>kpl</td>
-              <td class="td-num">3 000,00 €</td>
-              <td class="td-num">3 000,00 €</td>
+              <td>Ekologická skládka a odvoz</td>
             </tr>
 
             <tr style="background: #f1ede6; font-weight: 600;">
-              <td colspan="5">KÚPEĽŇA NA KĽÚČ (SIKO)</td>
+              <td colspan="5">MURÁRSKE, SADROKARTÓNOVÉ A POVRCHOVÉ ÚPRAVY</td>
             </tr>
             <tr>
-              <td><strong>Komplet Kúpeľňa na kľúč + stavebný mat., Jolly hrany, sanita</strong></td>
-              <td>1,00</td>
-              <td>kpl</td>
-              <td class="td-num">7 500,00 €</td>
-              <td class="td-num">7 500,00 €</td>
+              <td>Sadrokartónové podhľady</td>
+              <td>Závesný podhľad SDK biely 12,5 mm na oceľovej konštrukcii CD Q2</td>
+              <td class="td-num">228,00</td>
+              <td>m²</td>
+              <td>Rigips / Knauf s tmelením v kvalite Q2</td>
+            </tr>
+            <tr>
+              <td>Finálne omietky</td>
+              <td>Sádrová omietka + celoplošné sieťkovanie do 2 cm</td>
+              <td class="td-num">740,00</td>
+              <td>m²</td>
+              <td>Rimano Glet XL (dokonale hladké zrkadlové steny)</td>
+            </tr>
+            <tr>
+              <td>Penetrácia podkladu</td>
+              <td>Hĺbková penetrácia vnútorného podkladu stien Weber</td>
+              <td class="td-num">960,00</td>
+              <td>m²</td>
+              <td>Zjednotenie savosti a zvýšenie priľnavosti</td>
+            </tr>
+            <tr>
+              <td>Maliarske práce</td>
+              <td>Maľby akrylátové dvojnásobné ručne nanášané (2-3 vrstvy)</td>
+              <td class="td-num">960,00</td>
+              <td>m²</td>
+              <td>Vysoko kryvá umývateľná farba Weber</td>
+            </tr>
+            <tr>
+              <td>Murované priečky</td>
+              <td>Vymurovanie nových deliacich stien z tvárnic Ytong 150 mm</td>
+              <td class="td-num">Priečka</td>
+              <td>bm</td>
+              <td>Ytong s armovacou výstužou</td>
             </tr>
 
-            <tr class="table-total">
-              <td colspan="4">CELKOM BEZ DPH</td>
-              <td class="td-num">90 532,00 €</td>
+            <tr style="background: #f1ede6; font-weight: 600;">
+              <td colspan="5">ELEKTROINŠTALÁCIE A ZDRAVOTECHNIKA</td>
             </tr>
-            <tr class="table-total" style="background: #e8ded2;">
-              <td colspan="4">DPH (+23%)</td>
-              <td class="td-num">20 822,36 €</td>
+            <tr>
+              <td>Nová elektroinštalácia</td>
+              <td>Kompletná nová kabeláž, poistková skriňa, revízia a pripojenie</td>
+              <td class="td-num">230,00</td>
+              <td>m²</td>
+              <td>Medené rozvody CYKY, modulárne prvky Schneider/Legrand</td>
             </tr>
-            <tr class="table-total" style="background: var(--dark); color: #fff;">
-              <td colspan="4">CELKOM SPOLU S DPH</td>
-              <td class="td-num" style="font-size: 17px; color: #f5eedf;">111 354,36 €</td>
+            <tr>
+              <td>Vodoinštalácia a odpad</td>
+              <td>Nové prípojné body vody a kanalizácie vrátane materiálu</td>
+              <td class="td-num">16,00</td>
+              <td>ks</td>
+              <td>Plastohliníkové potrubia s tepelnou izoláciou</td>
+            </tr>
+
+            <tr style="background: #f1ede6; font-weight: 600;">
+              <td colspan="5">PODLAHY, SCHODISKO, DVERE A VYKUROVANIE</td>
+            </tr>
+            <tr>
+              <td>Suchá podlaha</td>
+              <td>Vyrovnávací podsyp Liapor 1-4 mm (keramzit) + dosky Rigidur E25</td>
+              <td class="td-num">113,00</td>
+              <td>m²</td>
+              <td>Systém Rigidur pre výbornú akustiku a rovinatosť</td>
+            </tr>
+            <tr>
+              <td>Samonivelizácia</td>
+              <td>Cementová samonivelizačná stierka hr. 20 mm</td>
+              <td class="td-num">115,00</td>
+              <td>m²</td>
+              <td>Pevnosť v tlaku 25 MPa</td>
+            </tr>
+            <tr>
+              <td>Vinylová podlaha</td>
+              <td>Pokládka kompozitného rigidného vinylu klik (vrátane rybiny)</td>
+              <td class="td-num">215,00</td>
+              <td>m²</td>
+              <td>SPC vinyl odolný voči vode so zámkovým spojom</td>
+            </tr>
+            <tr>
+              <td>Schodisko</td>
+              <td>Nové masívne schodiskové stupne z tvrdého jaseňa</td>
+              <td class="td-num">1,00</td>
+              <td>kpl</td>
+              <td>Masívny jaseň s matným odolným PU lakom</td>
+            </tr>
+            <tr>
+              <td>Interiérové dvere</td>
+              <td>Montáž dverových krídiel a obložkových zárubní</td>
+              <td class="td-num">19,00</td>
+              <td>ks</td>
+              <td>Porta / ERKADO z ponuky SIKO</td>
+            </tr>
+            <tr>
+              <td>Vstupné dvere</td>
+              <td>Montáž vonkajších bezpečnostných tepelnoizolačných dverí</td>
+              <td class="td-num">2,00</td>
+              <td>ks</td>
+              <td>Bezpečnostné oceľovo-hliníkové dvere</td>
+            </tr>
+            <tr>
+              <td>Vykurovacie telesá</td>
+              <td>Demontáž starých a montáž nových panelových radiátorov</td>
+              <td class="td-num">16,00</td>
+              <td>ks</td>
+              <td>Korado Radik Klasik s termostatickými hlavicami</td>
+            </tr>
+
+            <tr style="background: #f1ede6; font-weight: 600;">
+              <td colspan="5">KÚPEĽŇA NA KĽÚČ (SIKO KÚPEĽNE)</td>
+            </tr>
+            <tr>
+              <td>Komplet realizácia</td>
+              <td>Obklady do v=2,1 m, Jolly hrany 45°, hydroizolácia, Geberit, vaňa, sanita</td>
+              <td class="td-num">1,00</td>
+              <td>kpl</td>
+              <td>Záručný servis a montáž certifikovanými majstrami SIKO</td>
             </tr>
           </tbody>
         </table>
@@ -1172,7 +1257,7 @@
     </div>
 
     <footer>
-      <p>&copy; 2026 <strong>Modul Company s.r.o.</strong> &middot; Všetky práva vyhradené.</p>
+      <p>&copy; 2026 <strong>Architektonický a stavebný projekt rekonštrukcie</strong> &middot; Všetky práva vyhradené.</p>
     </footer>
 
   </div>
