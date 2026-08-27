@@ -24,7 +24,7 @@ Oficiálna klientska prezentácia komplexnej rekonštrukcie rodinného domu v Br
 4. **Pododdiel čistých priestorov bez nábytku**:
    - Obývacia izba, Hala a schodisko, Kuchyňa, Hlavná spálňa, Kúpeľňa na kľúč.
 
-5. **Položkový investičný rozpočet (CP26082026)**:
-   - Základ bez DPH: **90 532,00 €**
-   - DPH 23 %: **20 822,36 €**
-   - **Celková investícia s DPH: 111 354,36 €**
+5. **Hierarchia cien &mdash; Hlavná cena bez DPH**:
+   - **Hlavná cena diela bez DPH: 90 532,00 €** (veľké zlaté zvýraznenie v záhlaví, v sumári aj vo finálnom riadku tabuľky)
+   - DPH 23 %: **20 822,36 €** (v druhom pláne)
+   - Informatívna suma s DPH: **111 354,36 €** (v druhom pláne)
