@@ -21,8 +21,6 @@ Oficiálna klientska prezentácia komplexnej rekonštrukcie rodinného domu v Br
    - Pôvodný stav („Pred“): Autentická fotografia stavebného stavu z priečinka (`photo_27_2026-08-27_14-06-47.jpg`).
    - Stav po rekonštrukcii („Po“): Nový luxusný render kuchyne dodaný investorom (`05_Kuchyna_Nova.jpg`): kuchynský ostrov s vertikálnym lamelovým dekorom a travertínovou pracovnou doskou, zapustená varná doska, nadväzujúce jedálenské sedenie a okno do záhrady.
 
-4. **Pododdiel čistých priestorov bez nábytku**:
-   - Obývacia izba, Hala a schodisko, Kuchyňa, Hlavná spálňa, Kúpeľňa na kľúč.
 
 5. **Hierarchia cien &mdash; Hlavná cena bez DPH**:
    - **Hlavná cena diela bez DPH: 90 532,00 €** (veľké zlaté zvýraznenie v záhlaví, v sumári aj vo finálnom riadku tabuľky)
