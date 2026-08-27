@@ -7,24 +7,19 @@ Oficiálna klientska prezentácia komplexnej rekonštrukcie rodinného domu v Br
 
 ---
 
-## Prehľad aktuálneho stavu:
+## Prehľad aktuálneho dizajnu a štruktúry:
 
-1. **Miestnosť č. 6 (Kuchyňa)**:
+1. **Čisté vizuálne porovnanie „Pred / Po“ bez informačných líšt („sukní“)**:
+   - Z každého z 8 blokov boli kompletne odstránené spodné textové odseky aj štvorice technických dlaždíc.
+   - Každá karta sa teraz sústredí výlučne na čistý názov miestnosti a interaktívny posuvník porovnania.
+
+2. **Miestnosť č. 4 (Obývacia izba s klenbovým oblúkom)**:
+   - Pôvodný stav („Pred“): Autentická fotografia priamo z priečinka zachytávajúca pohľad cez masívnu klenbovú stenu v bordovom odtieni do obývacej izby so starým podkladom, dverami vľavo a oknom vpravo.
+   - Stav po rekonštrukcii („Po“): Dokonale geometricky zladený čistý architektonický stav so sádrovou stierkou Rimano Glet XL, novou vinylovou podlahou ukladanou do vzoru rybina a novým radiátorom Korado Radik Klasik.
+
+3. **Miestnosť č. 6 (Kuchyňa)**:
    - Pôvodný stav („Pred“): Autentická fotografia stavebného stavu z priečinka (`photo_27_2026-08-27_14-06-47.jpg`).
-   - Stav po rekonštrukcii („Po“): Nový luxusný render kuchyne dodaný investorom (`05_Kuchyna_Nova.jpg`): kuchynský ostrov s vertikálnym lamelovým dekorom a travertínovou pracovnou doskou, zapustená varná doska, nadväzujúce jedálenské sedenie, podsvietená nika a čisté okno do záhrady.
-
-2. **Odstránenie zlatých rámčekov/štítkov v pravom hornom rohu kariet**:
-   - Všetky štítky (`view-tag`) v záhlaví jednotlivých porovnaní boli kompletne odstránené pre dosiahnutie maximálne čistého, luxusného a nerušeného vzhľadu bez nadbytočných informácií.
-
-3. **Štruktúra 8 hlavných pohľadov (Pred / Po)**:
-   - 1. Hlavná uličná fasáda a balkón
-   - 2. Vstupná zóna a vchodové dvere
-   - 3. Dvorová fasáda bez pergoly
-   - 4. Obývacia izba s klenbovým oblúkom
-   - 5. Vstupná hala a schodisko z masívneho jaseňa (3 000 €)
-   - 6. Kuchynský priestor a dizajnový ostrovček (s novým renderom)
-   - 7. Hlavná spálňa na poschodí
-   - 8. Kúpeľňa na kľúč s Jolly hranami (7 500 €)
+   - Stav po rekonštrukcii („Po“): Nový luxusný render kuchyne dodaný investorom (`05_Kuchyna_Nova.jpg`): kuchynský ostrov s vertikálnym lamelovým dekorom a travertínovou pracovnou doskou, zapustená varná doska, nadväzujúce jedálenské sedenie a okno do záhrady.
 
 4. **Pododdiel čistých priestorov bez nábytku**:
    - Obývacia izba, Hala a schodisko, Kuchyňa, Hlavná spálňa, Kúpeľňa na kľúč.
